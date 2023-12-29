@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { supabaseClient } from '@/utils/client';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai'
 
-export default function signUpPge(){
+export default function SignUpPge(){
     const [email, setEmail] = useState('');
     const [firstname, setFirstname] = useState('');
     const [lastName, setLastName] = useState('');
@@ -59,7 +59,7 @@ export default function signUpPge(){
                 setPassword('');
                 setFirstname('');
                 setLastName('');
-                router.push('/student/signin');
+                router.push('/student/Signin');
                 alert('ckeck your email to confirm your account')
             }
 
@@ -163,7 +163,7 @@ export default function signUpPge(){
                                 <Image src='/assets/image/Google.svg' alt='logo' width='25' height='25' />
                                 <span className='text-gray ml-2 font-medium  hover:text-black'>Sign in with google</span>
                             </button>
-                            <p className='flex-center pt-4 text-sm'>Have an account?  <Link href='/student/signin' className='text-primaryColor ml-1'> Sign in</Link></p>
+                            <p className='flex-center pt-4 text-sm'>Have an account?  <Link href='/student/Signin' className='text-primaryColor ml-1'> Sign in</Link></p>
                         </form>
                     </div>
                 </div>

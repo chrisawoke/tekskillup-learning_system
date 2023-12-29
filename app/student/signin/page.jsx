@@ -26,7 +26,7 @@ export default function LoginPge(){
             setLoading(false);
         }
         getUser();
-    }, [])
+    }, [ supabase.auth])
 
     const signUpGoogle = async () => {
         const { data, error } = await supabaseClient.auth.signInWithOAuth({
@@ -116,7 +116,7 @@ export default function LoginPge(){
                                 <Image src='/assets/image/Google.svg' alt='logo' width='25' height='25' />
                                 <span className='text-gray ml-2 font-medium hover:text-black text-sm md:text-base'>Sign in with google</span>
                             </button>
-                            <p className='flex-center pt-4 text-sm'>Don’t have an account?  <Link href='/student/signup' className='text-primaryColor ml-1'> Sign up</Link></p>
+                            <p className='flex-center pt-4 text-sm'>Don’t have an account?  <Link href='/student/Signup' className='text-primaryColor ml-1'> Sign up</Link></p>
                         </form>
                     </div>
                 </div>
