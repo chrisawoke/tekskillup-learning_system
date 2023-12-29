@@ -59,7 +59,7 @@ export default function SignUpPge(){
                 setPassword('');
                 setFirstname('');
                 setLastName('');
-                router.push('/student/signin');
+                router.push('/student/Signin');
                 alert('ckeck your email to confirm your account')
             }
 
@@ -163,7 +163,7 @@ export default function SignUpPge(){
                                 <Image src='/assets/image/Google.svg' alt='logo' width='25' height='25' />
                                 <span className='text-gray ml-2 font-medium  hover:text-black'>Sign in with google</span>
                             </button>
-                            <p className='flex-center pt-4 text-sm'>Have an account?  <Link href='/student/signin' className='text-primaryColor ml-1'> Sign in</Link></p>
+                            <p className='flex-center pt-4 text-sm'>Have an account?  <Link href='/student/Signin' className='text-primaryColor ml-1'> Sign in</Link></p>
                         </form>
                     </div>
                 </div>
