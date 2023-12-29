@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { supabaseClient } from '@/utils/client';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai'
 
-export default function signUpPge(){
+export default function SignUpPge(){
     const [email, setEmail] = useState('');
     const [firstname, setFirstname] = useState('');
     const [lastName, setLastName] = useState('');

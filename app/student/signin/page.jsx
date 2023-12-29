@@ -26,7 +26,7 @@ export default function LoginPge(){
             setLoading(false);
         }
         getUser();
-    }, [])
+    }, [ supabase.auth])
 
     const signUpGoogle = async () => {
         const { data, error } = await supabaseClient.auth.signInWithOAuth({
