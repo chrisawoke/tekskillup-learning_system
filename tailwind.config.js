@@ -18,8 +18,8 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        primary_600: "#E31B52",
-        green_500: "#F63D68",
+        primary_600: "#086250",
+        green_500: "#0A9F80",
         green_400: "#FD6F8E",
         lightGray: "#F2F4F7",
       },
