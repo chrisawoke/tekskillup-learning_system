@@ -39,3 +39,7 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.custom-btn {
+  @apply bg-navyBlue text-white sm:px-8 py-3 px-5 sm:text-base text-[12px] border border-navyBlue hover:text-navyBlue hover:bg-white hover:border-navyBlue rounded-full transition duration-150 ease-in-out cursor-pointer;
+}
