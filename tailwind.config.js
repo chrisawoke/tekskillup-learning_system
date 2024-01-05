@@ -14,14 +14,6 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
-      screens: {
-        xs: "360px",
-        sm: "480px",
-        md: "768px",
-        lg: "976px",
-        "2lg": "1160px",
-        xl: "1440px",
-      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
