@@ -29,7 +29,7 @@ module.exports = {
         primary_600: "#E31B52",
         green_500: "#F63D68",
         green_400: "#FD6F8E",
-        lightGray: "#667085",
+        lightGray: "#F2F4F7",
       },
     },
   },
