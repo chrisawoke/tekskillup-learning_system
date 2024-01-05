@@ -18,9 +18,10 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        primary_600: "#086250",
-        green_500: "#0A9F80",
-        green_400: "#FD6F8E",
+        primary_700: "#087861",
+        green_600: "#0E977B",
+        green_500: "#18B696",
+        green_400: "#13D3AD",
         lightGray: "#F2F4F7",
       },
       keyframes: {
