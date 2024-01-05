@@ -23,6 +23,20 @@ module.exports = {
         green_400: "#FD6F8E",
         lightGray: "#F2F4F7",
       },
+      keyframes: {
+        "animate-fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "animate-fade-out": {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        "fade-in": "animate-fade-in 0.4s ease-out backwards",
+        "fade-out": "animate-fade-out 0.4s ease-out forwards",
+      },
     },
   },
   plugins: [],
