@@ -41,7 +41,7 @@
 }
 
 .custom-btn {
-  @apply bg-primary_600 text-white sm:px-8 py-[5px] px-5 sm:text-base text-[12px] border border-primary_600 hover:text-white hover:border-green_500 rounded-[7px] transition duration-150 ease-in-out cursor-pointer;
+  @apply bg-primary_600 text-white sm:px-8 py-[6px] px-5 sm:text-base text-[12px] border border-primary_600 hover:text-white hover:border-green_500 rounded-[7px] transition duration-150 ease-in-out cursor-pointer;
 }
 
 .hero__title {
