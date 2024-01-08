@@ -10,7 +10,9 @@ const ContactSection = () =>{
                 <img src="/assets/image/Frame 427320786.png" alt=""/>
             </div>
         <div className="font-inter px-10 py-5 mt-10 md:flex justify-center items-center w-[100%] gap-20 md:px-20 md:py-10 md:mt-[-250px]">
-            <div className="md:w-[50%]"><Form/></div>
+            <div className="md:w-[50%]">
+                <Form/>
+                </div>
             <div className="py-10 md:w-[50%] md:py-0">
                 <h2 className="text-2xl font-bold mb-5 md:text-3xl">Contact Message</h2>
                 <p className="font-light">We will like to hear from you, please fill the form.</p>
