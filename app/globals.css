@@ -1,42 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  /* START: General styles */
-  .max-width {
-    @apply max-w-[1440px] mx-auto;
-  }
-  
-  .padding-x {
-    @apply sm:px-16 px-[2.25rem];
-  }
-  
-  .padding-y {
-    @apply py-4;
-  }
-  
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-  
-  .flex-start {
-    @apply flex justify-start items-start;
-  }
-  
-  .flex-end {
-    @apply flex justify-end items-center;
-  }
-  
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-12 px-[1.75rem];
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply bg-primary_700 text-white sm:px-8 py-[8px] px-10 sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer;
+}
+
+.hero__title {
+  @apply sm:text-[42px] text-[40px] font-extrabold;
+}
+
+/* In your global CSS file */
+.courses-hero-background {
+  @apply bg-cover bg-center py-24 px-4 text-white;
+  background-image: url('/assets/image/courses/courses-hero-background.png');
+}
