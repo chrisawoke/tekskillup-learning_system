@@ -47,3 +47,9 @@
 .hero__title {
   @apply sm:text-[42px] text-[40px] font-extrabold;
 }
+
+/* In your global CSS file */
+.courses-hero-background {
+  @apply bg-cover bg-center py-24 px-4 text-white;
+  background-image: url('/assets/image/courses/courses-hero-background.png');
+}
