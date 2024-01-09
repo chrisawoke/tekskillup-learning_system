@@ -11,7 +11,7 @@ const OurTeam = () => {
     <section className="text-center padding-x md:py-20 py-5">
       <h2 className="mb-3 font-bold md:text-4xl text-[0.8125rem]">Our Leadership Teams</h2>
       <p className=" text-[#59595A] md:text-xl text-[0.4375rem] md:leading-[1.875rem]">
-        With over 100 years or combined experience, we've got a well-seasoned
+        With over 100 years or combined experience, we&apos;ve got a well-seasoned
         team at the helm.
       </p>
       <div className="flex-between md:gap-[2.5rem] md:mt-32 mt-20 md:flex-nowrap flex-wrap">
