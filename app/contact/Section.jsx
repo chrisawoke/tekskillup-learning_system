@@ -1,4 +1,5 @@
-import { IoMdMail, IoLocationSharp } from "react-icons/io";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import Form from "./Form";
 
