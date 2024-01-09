@@ -1,24 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
-import { upcomingCourses as courses } from '../lib/data';
+import { upcomingCourses as courses, stats } from '../lib/data';
 
 const UpcomingCourses = () => {
-    const stats = [
-        { number: "15K+", label: "Students" },
-        { number: "35", label: "Main questions" },
-        { number: "75%", label: "Total success" },
-        { number: "16", label: "Years of experience" },
-        { number: "26", label: "Chief experts" },
-    ];
+   
 
     return (
-        <div className="py-6 px-6 md:px-12 bg-white">
+        <div className="padding-x padding-y my-2">
             <div className="">
-                <h2 className="text-2xl font-bold text-center mb-4">Upcoming Courses</h2>
-                <p className="text-gray-600 text-center mb-4 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
+                <h2 className="text-2xl font-bold text-center mb-2">Upcoming Courses</h2>
+                <p className="text-gray-600 text-center text-lg mb-4 max-w-3xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
 
                 {/* Courses List */}
-                <div className="my-4">
+                <div className="my-3">
                     {courses.map((course) => (
                         <div key={course.id} className="flex flex-col md:flex-row justify-between items-center rounded-lg p-4 shadow-card-100 my-8">
                             <Image src={course.imageUrl} alt={course.title} width={320} height={180} className="rounded-md mr-4 " />

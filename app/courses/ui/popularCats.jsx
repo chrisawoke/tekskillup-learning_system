@@ -1,12 +1,11 @@
 import React from 'react';
-// import { Icon } from '@heroicons/react/outline'; // Import the correct icon from heroicons
 import { categories } from '../lib/data';
 
 const PopularCats = () => {
 
     return (
-        <div className="px-6 md:px-12 my-6">
-            <h2 className="w-full text-xl md:text-2xl font-bold text-center mb-3">Popular Categories</h2>
+        <div className="padding-x padding-y">
+            <h2 className="w-full text-2xl md:text-2xl font-bold text-center mb-3">Popular Categories</h2>
             <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {categories.map((category, index) => (
                     <div key={index} className="flex items-center space-x-2 rounded-lg p-4 shadow-card-100">

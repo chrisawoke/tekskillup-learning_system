@@ -1,6 +1,6 @@
 export const courses = [
     {
-        id: 1,
+        courseId: 1,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -9,7 +9,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 2,
+        courseId: 2,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -18,7 +18,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 3,
+        courseId: 3,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -27,7 +27,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 4,
+        courseId: 4,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -36,7 +36,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 5,
+        courseId: 5,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -45,7 +45,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 6,
+        courseId: 6,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -54,7 +54,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 7,
+        courseId: 7,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -63,7 +63,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 8,
+        courseId: 8,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -72,7 +72,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 9,
+        courseId: 9,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -81,7 +81,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 10,
+        courseId: 10,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -90,7 +90,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 11,
+        courseId: 11,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -99,7 +99,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 12,
+        courseId: 12,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -108,7 +108,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 13,
+        courseId: 13,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -117,7 +117,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 14,
+        courseId: 14,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -126,7 +126,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 15,
+        courseId: 15,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -135,7 +135,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 16,
+        courseId: 16,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -144,7 +144,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 17,
+        courseId: 17,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -153,7 +153,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 18,
+        courseId: 18,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -162,7 +162,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 19,
+        courseId: 19,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -171,7 +171,7 @@ export const courses = [
         plays: 20,
     },
     {
-        id: 20,
+        courseId: 20,
         title: "Web Design basic to advanced",
         price: 560,
         rating: 4.8,
@@ -201,7 +201,8 @@ export const upcomingCourses = [
         duration: "00:00:00",
         price: '0',
         imageUrl: "/assets/image/courses/upcoming-courses-1.svg",
-        instructorAvatarUrl: "/assets/image/courses/avatar-one.svg",    },
+        instructorAvatarUrl: "/assets/image/courses/avatar-one.svg",
+    },
     {
         id: 2,
         title: "Colors Theory For Designers",
@@ -210,7 +211,8 @@ export const upcomingCourses = [
         duration: "00:00:00",
         price: '0',
         imageUrl: "/assets/image/courses/upcoming-courses-2.svg",
-        instructorAvatarUrl: "/assets/image/courses/avatar-two.svg",    },
+        instructorAvatarUrl: "/assets/image/courses/avatar-two.svg",
+    },
     {
         id: 3,
         title: "Colors Theory For Designers",
@@ -229,5 +231,38 @@ export const upcomingCourses = [
         duration: "00:00:00",
         price: '0',
         imageUrl: "/assets/image/courses/upcoming-courses-4.svg",
-        instructorAvatarUrl: "/assets/image/courses/avatar-four.svg",    },
+        instructorAvatarUrl: "/assets/image/courses/avatar-four.svg",
+    },
 ];
+
+export const stats = [
+    { number: "15K+", label: "Students" },
+    { number: "35", label: "Main questions" },
+    { number: "75%", label: "Total success" },
+    { number: "16", label: "Years of experience" },
+    { number: "26", label: "Chief experts" },
+];
+
+export const topInstructors = [
+    {
+        imageUrl: '/assets/image/courses/instructor-one.svg',
+        facebookUrl: 'https://www.facebook.com/',
+        twitterUrl: 'https://twitter.com/',
+        instagramUrl: 'https://www.instagram.com/',
+        name: 'John Doe',
+    },
+    {
+        imageUrl: '/assets/image/courses/instructor-two.svg',
+        facebookUrl: 'https://www.facebook.com/',
+        twitterUrl: 'https://twitter.com/',
+        instagramUrl: 'https://www.instagram.com/',
+        name: 'John Doe',
+    },
+    {
+        imageUrl: '/assets/image/courses/instructor-three.svg',
+        facebookUrl: 'https://www.facebook.com/',
+        twitterUrl: 'https://twitter.com/',
+        instagramUrl: 'https://www.instagram.com/',
+        name: 'John Doe',
+    }
+]
