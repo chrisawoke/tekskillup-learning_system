@@ -4,7 +4,7 @@ import { categories } from '../lib/data';
 const PopularCats = () => {
 
     return (
-        <div className="padding-x padding-y">
+        <div className="padding-x padding-y mb-8">
             <h2 className="w-full text-2xl md:text-2xl font-bold text-center mb-3">Popular Categories</h2>
             <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {categories.map((category, index) => (

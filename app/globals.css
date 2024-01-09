@@ -57,3 +57,9 @@
 .custom-btn svg path {
   fill: #FFFFFF;
 }
+
+.rotate-arrow {
+  display: inline-block;
+  /* Needed to transform inline elements */
+  transform: rotate(-45deg);
+}

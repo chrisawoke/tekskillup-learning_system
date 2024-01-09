@@ -9,7 +9,7 @@ const UpcomingCourses = () => {
         <div className="padding-x padding-y my-2">
             <div className="">
                 <h2 className="text-2xl font-bold text-center mb-2">Upcoming Courses</h2>
-                <p className="text-gray-600 text-center text-lg mb-4 max-w-3xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
+                <p className="text-gray-600 text-center text-lg max-w-3xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
 
                 {/* Courses List */}
                 <div className="my-3">

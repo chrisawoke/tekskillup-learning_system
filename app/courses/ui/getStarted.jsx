@@ -3,10 +3,10 @@ import React from 'react';
 
 export default function Platform() {
     const mobileImageUrl = '/assets/image/courses/courses-platform-mobile.png';
-    const desktopImageUrl = '/assets/image/courses/courses-platform-desktop.png';
+    const desktopImageUrl = '/assets/image/courses/courses-platform-desktop.svg';
 
     return (
-        <div className="padding-x padding-y">
+        <div className="padding-x padding-y mb-8">
             <div className="flex flex-col md:flex-row justify-center items-center mb-6">
 
                 <div className="flex flex-col md:flex-row md:mr-4 md:w-[50%]">
@@ -17,7 +17,7 @@ export default function Platform() {
                         <div className='w-full flex justify-center md:justify-start'>
                             <button className="custom-btn mx-auto md:ml-0">
                                 Get started
-                                <span className="ml-2">➜</span>
+                                <span className="ml-2 rotate-arrow">➜</span>
                             </button>
                         </div>
 
@@ -50,12 +50,12 @@ export default function Platform() {
                         />
                     </div>
                     {/* Desktop Image */}
-                    <div className="hidden md:block md:w-[80%] md:m-auto mr-0">
+                    <div className="hidden md:block md:w-[80%] lg:w-[60%] md:m-auto lg:mr-6 mr-0">
                         <Image
                             src={desktopImageUrl}
                             layout="responsive"
-                            width={200}
-                            height={300}
+                            width={160}
+                            height={225}
                             objectFit="cover"
                             alt="Collage of educational activities with students and instructors"
                         />

@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 const PopularInstructors = () => {
     return (
-        <section className="padding-x padding-y">
+        <section className="padding-x padding-y mb-8">
             <h2 className="w-full text-2xl md:text-2xl font-bold text-center mb-3">Popular Instructors</h2>
-            <p className="text-gray-600 text-center mb-3 text-sm md:text-lg leading-5 md:width-[80%] md:mx-auto">
+            <p className="text-gray-600 text-center text-sm md:text-lg leading-4 md:width-[80%] md:mx-auto">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce
             </p>
             <div className="flex w-full">
