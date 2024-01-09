@@ -53,3 +53,7 @@
   @apply bg-cover bg-center py-24 px-4 text-white;
   background-image: url('/assets/image/courses/courses-hero-background.png');
 }
+
+.custom-btn svg path {
+  fill: #FFFFFF;
+}

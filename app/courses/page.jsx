@@ -9,7 +9,7 @@ import PopularInstructors from './ui/popularInstructors'
 
 const page = () => {
     return (
-        <section className={`max-width ${openSans.className} antialiased`}>
+        <section className={`max-width ${openSans.className} antialiased mx-auto`}>
             <Hero />
             <Platform />
             <TopCourses />

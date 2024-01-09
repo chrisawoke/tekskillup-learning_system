@@ -2,7 +2,7 @@ export const courses = [
     {
         courseId: 1,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 100,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-one.svg",
@@ -11,7 +11,7 @@ export const courses = [
     {
         courseId: 2,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 200,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-two.svg",
@@ -20,7 +20,7 @@ export const courses = [
     {
         courseId: 3,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 300,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-three.svg",
@@ -29,7 +29,7 @@ export const courses = [
     {
         courseId: 4,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 400,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-four.svg",
@@ -38,7 +38,7 @@ export const courses = [
     {
         courseId: 5,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 500,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-five.svg",
@@ -47,7 +47,7 @@ export const courses = [
     {
         courseId: 6,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 600,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-six.svg",
@@ -56,7 +56,7 @@ export const courses = [
     {
         courseId: 7,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 700,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-one.svg",
@@ -65,7 +65,7 @@ export const courses = [
     {
         courseId: 8,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 800,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-two.svg",
@@ -74,7 +74,7 @@ export const courses = [
     {
         courseId: 9,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 900,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-three.svg",
@@ -83,7 +83,7 @@ export const courses = [
     {
         courseId: 10,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1000,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-four.svg",
@@ -92,7 +92,7 @@ export const courses = [
     {
         courseId: 11,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1100,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-five.svg",
@@ -101,7 +101,7 @@ export const courses = [
     {
         courseId: 12,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1200,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-six.svg",
@@ -110,7 +110,7 @@ export const courses = [
     {
         courseId: 13,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1300,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-one.svg",
@@ -119,7 +119,7 @@ export const courses = [
     {
         courseId: 14,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1400,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-two.svg",
@@ -128,7 +128,7 @@ export const courses = [
     {
         courseId: 15,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1500,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-three.svg",
@@ -137,7 +137,7 @@ export const courses = [
     {
         courseId: 16,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1600,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-four.svg",
@@ -146,7 +146,7 @@ export const courses = [
     {
         courseId: 17,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1700,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-five.svg",
@@ -155,7 +155,7 @@ export const courses = [
     {
         courseId: 18,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1800,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-six.svg",
@@ -164,7 +164,7 @@ export const courses = [
     {
         courseId: 19,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 1900,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-one.svg",
@@ -173,7 +173,7 @@ export const courses = [
     {
         courseId: 20,
         title: "Web Design basic to advanced",
-        price: 560,
+        price: 2000,
         rating: 4.8,
         students: 413,
         image: "/assets/image/courses/rectangle-two.svg",
