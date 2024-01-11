@@ -18,27 +18,9 @@ const Hero = () => {
                 their products here so that you could create your own unique
                 project.
               </p>
-              <ul className="my-10 md:my-6">
-                <li className="flex items-center text-sm md:text-base">
-                  <RiVerifiedBadgeFill className="text-navyBlue" size={24} />
-                  <span className="ml-4 text-[#565656]">
-                    Get Overview at a glance
-                  </span>
-                </li>
-                <li className="flex items-center text-sm md:text-base my-2">
-                  <RiVerifiedBadgeFill className="text-navyBlue" size={24} />
-                  <span className="ml-4 text-[#565656]">
-                    Deposit funds easily, security
-                  </span>
-                </li>
-                <li className="flex items-center text-sm md:text-base">
-                  <RiVerifiedBadgeFill className="text-navyBlue" size={24} />
-                  <span className="ml-4 text-[#565656]">Get Live Support</span>
-                </li>
-              </ul>
             </div>
-            <div className="flex flex-col md:flex-row gap-10 mt-8 md:mt-4 pb-10">
-              <button className="custom-btn">Get Started</button>
+            <div className="flex flex-col md:flex-row gap-10 mt-8 md:mt-4 pb-10 w-44 h-11 p-2.5 bg-emerald-800 rounded-lg justify-center items-center">
+              <button className="text-white text-base font-semibold leading-7">Get Started</button>
             </div>
           </div>
         </div>
