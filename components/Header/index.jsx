@@ -42,7 +42,7 @@ const Header = () => {
       <header
         className={`header -py-10 left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
+            ? "fixed z-[9999] bg-white shadow-sticky backdrop-blur-sm transition"
             : "absolute bg-transparent"
         }`}
       >
@@ -56,18 +56,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-7.svg"
+                  src="/images/Tekskillup-logo.png"
                   alt="logo"
                   width={240}
                   height={60}
                   className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo-7.svg"
-                  alt="logo"
-                  width={140}
-                  height={60}
-                  className="hidden w-full dark:block"
                 />
               </Link>
             </div>
@@ -97,7 +90,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
