@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="px-8 md:pt-20">
           <Image
-            src="/assets/images/pana.svg"
+            src="/assets/image/pana.svg"
             alt="hero-image"
             width="100"
             height="100"

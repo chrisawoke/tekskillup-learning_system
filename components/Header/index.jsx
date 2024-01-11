@@ -56,7 +56,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/Tekskillup-logo.png"
+                  src="/assets/image/Tekskillup-logo.png"
                   alt="logo"
                   width={240}
                   height={60}
