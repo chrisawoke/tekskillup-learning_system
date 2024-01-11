@@ -12,11 +12,9 @@ const Hero = () => {
               & Affordable
             </p>
             <div className="my-6 md:my-12 lg:my-8">
-              <p className="text-[#565656] text-sm md:text-lg text-center md:text-left">
-                MailBlink is an email and sms marketing for everything you need
-                to create a campaign. Hundreds of independent developers sell
-                their products here so that you could create your own unique
-                project.
+              <p className="text-sm md:text-lg text-center md:text-left w-96 text-neutral-800 font-semibold leading-normal">
+                Grow with Online Design and Development Courses. <br/>
+                Learn from Industry Experts and Enhance Your Skills.
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-10 mt-8 md:mt-4 pb-10 w-44 h-11 p-2.5 bg-emerald-800 rounded-lg justify-center items-center">
