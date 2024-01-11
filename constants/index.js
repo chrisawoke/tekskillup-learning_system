@@ -63,7 +63,7 @@ export const achievements = [
       "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
   },
   {
-    title: "Positive Studebt Feedbacks",
+    title: "Positive Student Feedbacks",
     imgUrl: "/assets/icons/mask.svg",
     detail:
       "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
