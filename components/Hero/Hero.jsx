@@ -8,12 +8,12 @@ const Hero = () => {
         <div className="px-8 pb-6 lg:pb-48 relative">
           <div className="pt-4 md:pt-12">
             <p className="text-black text-4xl hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
-              Study Online Swiftly
-              <br />
+              Study Online Swiftly,
               <span className="hero__gradient_text">
-                Conveniently <br />
+                Conveniently
+                <br />&
               </span>
-              & Affordable
+              Affordable
             </p>
             <div className="my-6 md:my-12 lg:my-8">
               <p className="text-sm md:text-lg text-center md:text-left">

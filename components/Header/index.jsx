@@ -51,14 +51,14 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-2" : "py-4"
                 } `}>
                 <Image
                   src="/assets/image/Tekskillup-logo.png"
                   alt="logo"
-                  width={140}
+                  width={40}
                   height={30}
-                  className="hidden w-full dark:block"
+                  className="w-full"
                 />
               </Link>
             </div>

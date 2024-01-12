@@ -40,7 +40,7 @@
   @apply flex justify-between items-center;
 }
 .sticky .header-logo {
-  @apply py-5 lg:py-2;
+  @apply py-1 lg:py-1;
 }
 
 .sticky .menu-scroll.active {
