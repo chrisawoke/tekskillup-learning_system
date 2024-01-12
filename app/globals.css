@@ -47,3 +47,35 @@
 .hero__title {
   @apply sm:text-[42px] text-[40px] font-extrabold;
 }
+
+
+
+/* CONTACT PAGE STYLES */
+.flex-column{
+  @apply flex flex-col;
+}
+
+.border-group{
+  @apply border border-solid border-gray-400 p-2 rounded  ;
+}
+
+/* Responsive changes for small screens (sm) and below */
+@media (max-width: 640px) {
+  .flex-start {
+    @apply block;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 2;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 5s; /* Adjust the duration to your desired value */
+}
