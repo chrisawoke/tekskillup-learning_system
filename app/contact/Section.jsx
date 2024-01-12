@@ -10,7 +10,7 @@ const ContactSection = () => {
         {/* This is not how to import image in a Next.js app */}
         <img src="/assets/image/Frame 427320786.png" alt="" />
       </div>
-      <div className="font-inter px-10 py-5 mt-10 md:flex justify-center items-center w-[100%] gap-20 md:px-20 md:py-10 md:mt-[-250px]">
+      <div className="px-10 py-5 mt-10 md:flex justify-center items-center w-[100%] gap-20 md:px-20 md:py-10 md:mt-[-250px]">
         <div className="md:w-[50%]">
           <Form />
         </div>
