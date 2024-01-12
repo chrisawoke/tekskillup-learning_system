@@ -9,13 +9,14 @@ const Hero = () => {
           <div className="pt-4 md:pt-12">
             <p className="text-black text-4xl hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
               Study Online Swiftly
+              <br />
               <span className="hero__gradient_text">
                 Conveniently <br />
               </span>
               & Affordable
             </p>
             <div className="my-6 md:my-12 lg:my-8">
-              <p className="text-sm md:text-lg text-center md:text-left w-96 text-neutral-800 font-normal leading-normal">
+              <p className="text-sm md:text-lg text-center md:text-left">
                 Grow with Online Design and Development Courses. <br />
                 Learn from Industry Experts and Enhance Your Skills.
               </p>
