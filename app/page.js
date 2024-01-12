@@ -8,4 +8,6 @@ export default function Home() {
       <Hero/>
     </main>
   );
+  return <main className=""></main>;
+
 }

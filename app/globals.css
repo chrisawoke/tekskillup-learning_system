@@ -61,5 +61,15 @@
 /* In your global CSS file */
 .courses-hero-background {
   @apply bg-cover bg-center py-24 px-4 text-white;
-  background-image: url("/assets/image/courses/courses-hero-background.png");
+  background-image: url('/assets/image/courses/courses-hero-background.png');
 }
+  .box-shadow {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* about hero section */
+  .about-hero-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
