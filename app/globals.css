@@ -60,6 +60,11 @@
 
 .rotate-arrow {
   display: inline-block;
-  /* Needed to transform inline elements */
+  /* Needed to transform inline svg arrow elements */
   transform: rotate(-45deg);
+}
+
+/* Needed for paragraph sub-headings in the courses page  */
+.text-paragraph {
+  @apply text-lg
 }
