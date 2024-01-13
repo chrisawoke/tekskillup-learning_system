@@ -5,15 +5,17 @@ import Platform from './ui/getStarted'
 import TopCourses from './ui/topCourses'
 import PopularCats from './ui/popularCats'
 import UpcomingCourses from './ui/upcomingCourses'
+import PopularInstructors from './ui/popularInstructors'
 
 const page = () => {
     return (
-        <section className={`max-width ${openSans.className} antialiased`}>
+        <section className={`max-width ${openSans.className} antialiased mx-auto`}>
             <Hero />
             <Platform />
             <TopCourses />
             <PopularCats />
             <UpcomingCourses />
+            <PopularInstructors />
         </section>
     )
 }
