@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      boxShadow: {
+        'card-100': '0px 0px 3.34276px 1.67138px rgba(0, 0, 0, 0.1)',
+      },
       colors: {
         primary_700: "#087861",
         green_600: "#0E977B",
