@@ -138,3 +138,78 @@ export const teamSocialIcons = [
   { icon: <FaGithub />, key: "githubUrl" },
   { icon: <FaTwitterSquare />, key: "twitterUrl" },
 ];
+
+// teaching page (reasons to start)
+export const reasons = [
+  {
+    title: "Teach your way",
+    imgUrl: "/assets/icons/globe.svg",
+    detail:
+      "Publish the course you want, in the way you want, and always have control of your own content.",
+  },
+  {
+    title: "Inspire learners",
+    imgUrl: "/assets/icons/watch.svg",
+    detail:
+      "Teach what you know and help learners explore their interests, gain new skills, and advance their careers.",
+  },
+  {
+    title: "Get rewarded",
+    imgUrl: "/assets/icons/case.svg",
+    detail:
+      "Expand your professional network, build your expertise, and earn money on each paid enrollment.",
+  },
+];
+
+export const impressions = [
+  {
+    number: 62,
+    title: "students",
+    symbol: "M"
+   },
+  {
+    number: 75,
+    title: "Languages",
+    symbol: "+"
+   },
+  {
+    number: 830,
+    title: "Enrollments",
+    symbol: "M"
+   },
+  {
+    number: 180,
+    title: "Countries",
+    symbol: "+"
+   },
+  {
+    number: 15000,
+    title: "Enterprise customers",
+    symbol: "+"
+   },
+ 
+];
+
+export const toBeginItems = [
+  {
+    heading: "Plan Your curriculum",
+    imgUrl: "/assets/image/team-boy2.png",
+    detail1a: "You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.",
+    detail1b: "The way that you teach — what you bring to it — is up to you.",
+    detail2: "We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized.",
+  },
+  {
+    heading: "Record your video",
+    imgUrl: "/assets/image/team-girl2.png",
+    detail1a: "Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.",
+    detail1b: "If you don’t like being on camera, just capture your screen. Either way, we recommend two hours or more of video for a paid course.",
+    detail2: "Our support team is available to help you throughout the process and provide feedback on test videos.",
+  },
+  {
+    heading: "Launch your course",
+    imgUrl: "/assets/image/team-boy.png",
+    detail1a: "Gather your first ratings and reviews by promoting your course through social media and your professional networks.",
+    detail1b: "Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.",
+    detail2: "Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to courses. There’s even more opportunity for courses chosen for Udemy Business.",
+  },
+];
