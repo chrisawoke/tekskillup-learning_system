@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
+    <>
     <section className="max-width md:px-12 mx-auto mb-24 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
         <div className="px-8 pb-6 lg:pb-48 relative">
@@ -37,6 +38,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
