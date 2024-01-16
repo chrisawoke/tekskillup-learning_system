@@ -61,6 +61,7 @@ const Header = () => {
                   className="mr-20"
                 />
               </Link>
+              
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -136,10 +137,10 @@ const Header = () => {
                 <Link
                   href="/signin"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block">
-                  Sign In
+                  Login
                 </Link>
                 <Link href="/signup" className="custom-btn">
-                  Sign Up
+                  Get Started
                 </Link>
                 <div></div>
               </div>
