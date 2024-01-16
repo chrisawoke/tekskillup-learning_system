@@ -1,6 +1,7 @@
 import BrandsLogo from "@/components/BrandsLogo";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
+import ServiceStats from "@/components/ServiceStats";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <BrandsLogo/>
+      <ServiceStats/>
     </main>
   );
 }
