@@ -5,8 +5,8 @@ const Hero = () => {
     <section className="md:px-0 mb-24 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
         <div className="pr-20 pl-0 pb-6 lg:pb-48 relative">
-          <div className="pt-4 md:pt-12">
-            <p className="text-black text-4xl hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
+          <div className="pt-4 -ml-10 md:pt-12">
+            <p className="text-black text-4xl -ml-5 hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
               Study Online Swiftly,
               <span className="hero__gradient_text">
                 Conveniently
