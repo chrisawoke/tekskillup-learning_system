@@ -4,9 +4,9 @@ const BrandsLogo = () => {
   return (
     <>
       {/* <!-- ===== BrandsLogo Start ===== --> */}
-      <section class="bg-teal-800 bg-opacity-5  dark:bg-gray-900">
+      <section class="bg-teal-800 bg-opacity-5 dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
-        <div class="grid grid-cols-2 gap-8 mt-10 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+        <div class="grid grid-cols-2 w-full gap-8 mt-10 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
             <a class="flex items-center lg:justify-center" target="_blank">
                 <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
