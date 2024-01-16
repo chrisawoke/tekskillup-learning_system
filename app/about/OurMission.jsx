@@ -20,7 +20,7 @@ const OurMission = () => {
             }}
             onMouseEnter={() => setHoveredGoal(index)}
             onMouseLeave={() => setHoveredGoal(null)}>
-            <Image src={goal.imgUrl} alt="" width={50} height={50} className=" md:w-[20%] sm:w-[9%] w-[13%]"/>
+            <Image src={goal.imgUrl} alt="" width={50} height={50} className=" md:w-[3rem] w-[2.5rem]"/>
             <h3 className="font-bold lg:text-xl md:text-base sm:text-xl text-base lg:my-4 my-2">{goal.title}</h3>
             <p className="md:h-[14rem] h-fit lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">{goal.detail}</p>
           </div>

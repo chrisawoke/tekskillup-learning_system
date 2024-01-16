@@ -92,7 +92,7 @@ const Form = () => {
   };
 
   return (
-    <main className="w-[100%] font-inter py-10">
+    <main className="w-[100%] padding-y">
       <div>
         <h2 className="text-2xl font-bold md:text-3xl" >Send a message</h2>
       </div>

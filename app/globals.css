@@ -107,10 +107,6 @@
   transform: rotate(-45deg);
 }
 
-.box-shadow {
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
-}
-
 /* Needed for paragraph sub headings */
 .text-paragraph {
   @apply text-lg;
@@ -121,4 +117,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow2 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.09);
 }
