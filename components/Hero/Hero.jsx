@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="max-width md:px-12 mx-auto mb-24 md:mb-0">
+    <section className="md:px-0 mb-24 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
-        <div className="px-8 pb-6 lg:pb-48 relative">
+        <div className="pr-20 pl-0 pb-6 lg:pb-48 relative">
           <div className="pt-4 md:pt-12">
             <p className="text-black text-4xl hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
               Study Online Swiftly,
               <span className="hero__gradient_text">
                 Conveniently
-                <br />&
               </span>
+                <br />&
               Affordable
             </p>
             <div className="my-6 md:my-12 lg:my-8">
