@@ -9,8 +9,8 @@ const OurTeam = () => {
 
   return (
     <section className="text-center flex-center flex-col padding-x md:py-20 py-8">
-      <h2 className="mb-3 font-bold md:text-4xl text-[1.3rem]">Our Leadership Teams</h2>
-      <p className=" text-[#59595A] md:w-[80%] lg:text-xl md:text-[.95rem] text-[0.8rem] lg:leading-[1.875rem]">
+      <h2 className="mb-3 font-bold lg:text-4xl md:text-2xl text-[1.35rem]">Our Leadership Teams</h2>
+      <p className=" text-[#59595A] md:w-[65%] w-[80%] lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">
         With over 100 years or combined experience, we&apos;ve got a well-seasoned
         team at the helm.
       </p>
@@ -22,14 +22,14 @@ const OurTeam = () => {
             onMouseEnter={() => setHoveredMember(index)}
             onMouseLeave={() => setHoveredMember(null)}>
             <div
-              className="w-full sm:h-[13rem] h-[9rem] flex-center"
+              className="w-full sm:h-[13rem] h-[9rem] flex-center rounded-lg"
               style={{ backgroundColor: member.backgroundColor }}>
               <Image
                 src={member.imgUrl}
                 alt={member.imgAlt}
                 width={500}
                 height={500}
-                className=" relative sm:-top-10 -top-6 sm:h-[18rem] h-[12rem] object-cover"
+                className=" rounded-lg relative sm:-top-10 -top-6 sm:h-[18rem] h-[12rem] object-cover"
               />
             </div>
             <h3 className="font-bold lg:text-xl sm:text-[1rem] text-[.65rem] md:mt-5 mt-2">{member.name}</h3>
@@ -41,15 +41,15 @@ const OurTeam = () => {
                 opacity: hoveredMember === index ? 1 : 0,
                 transition: "opacity 0.3s ease",
               }}>
-              <p className="md:text-base sm:text-[0.85rem] text-[0.6rem]">{member.bio}</p>
+              <p className="lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">{member.bio}</p>
               <div className="flex-center gap-2 mt-8">
                 {teamSocialIcons.map((icon) => (
-                  <div key={icon.key} className=" rounded-full md:scale-95 scale-75 md:p-2 p-[5px] hover:cursor-pointer md:hover:scale-110 hover:scale-90 transition-all"
+                  <a href={member.socials[icon.key]} key={icon.key}>
+                  <div className=" rounded-full md:scale-95 scale-75 md:p-2 p-[5px] hover:cursor-pointer md:hover:scale-110 hover:scale-90 transition-all"
                   style={{ backgroundColor: member.backgroundColor }}>
-                   <a href={member.socials[icon.key]} >
-                      {icon.icon}
-                    </a> 
+                      {icon.icon} 
                   </div>
+                  </a>
                 ))}
               </div>
             </div>

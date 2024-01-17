@@ -15,8 +15,8 @@ export default function StarRating({ rating }) {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5">
         <defs>
           <linearGradient id={gradientId}>
-            <stop offset={gradientId === emptyStarGradientId ? "0%" : "100%"} stop-color="gold"/>
-            <stop offset={gradientId === fullStarGradientId ? "100%" : "0%"} stop-color="grey"/>
+            <stop offset={gradientId === emptyStarGradientId ? "0%" : "100%"} stopColor="gold"/>
+            <stop offset={gradientId === fullStarGradientId ? "100%" : "0%"} stopColor="grey"/>
           </linearGradient>
         </defs>
         <path fill={`url(#${gradientId})`} d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118

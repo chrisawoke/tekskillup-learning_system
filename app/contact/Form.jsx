@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
   
 
 
-
 const Form = () => {
 
       // FORM VALIDATION
@@ -37,7 +36,6 @@ const Form = () => {
       message: '',
     };
 
-    // Example validation rules, you can modify these according to your requirements
     if (firstName.trim() === '') {
       newErrors.firstName = 'First name is required';
       valid = false;
@@ -68,7 +66,6 @@ const Form = () => {
     }
 
 
-    // Add more validation rules for other fields
 
     setErrors(newErrors);
     return valid;
@@ -95,30 +92,30 @@ const Form = () => {
   };
 
   return (
-    <main className="w-[100%] font-inter py-10">
+    <main className="w-[100%] padding-y">
       <div>
         <h2 className="text-2xl font-bold md:text-3xl" >Send a message</h2>
       </div>
       <form className=""  onSubmit={handleSubmit} >
-        <div className="flex justify-start items-start gap-5 md:w-[100%]">
-          <div className="flex flex-col mt-5 md:w-[50%]">
+        <div className="flex-start gap-5 md:w-[100%]">
+          <div className="flex-column mt-5 md:w-[50%]">
             <label className="">FirstName</label>
             <input
               type="text"
               style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-              className="focus:bg-black-100 mt-2 border border-solid border-gray-400 p-2 rounded w-[100%]"
+              className="focus:bg-black-100 mt-2 border-group w-[100%]"
               placeholder="John"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <span className="text-red-500">{errors.firstName}</span>
           </div>
-          <div className="flex flex-col mt-5 md:ml-5 md:w-[50%]">
+          <div className="flex-column mt-5 md:ml-5 md:w-[50%]">
             <label className="">LastName</label>
             <input
               type="text"
               style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-              className="focus:bg-black-100 mt-2 border border-solid border-gray-400 p-2 rounded w-[100%]"
+              className="focus:bg-black-100 mt-2 border-group w-[100%]"
               placeholder="Doe"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
@@ -126,26 +123,26 @@ const Form = () => {
             <span className="text-red-500">{errors.lastName}</span>
           </div>
         </div>
-        <div className="flex justify-start items-start gap-5 md:w-[100%]">
-          <div className="flex flex-col mt-5 md:w-[50%]">
+        <div className="flex-start gap-5 md:w-[100%]">
+          <div className="flex-column mt-5 md:w-[50%]">
             <label className="">Email</label>
             <input
               type="email"
               style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-              className="focus:bg-black-100 mt-2 border border-solid border-gray-400 p-2 rounded w-[100%]"
+              className="focus:bg-black-100 mt-2 border-group w-[100%]"
               placeholder="JohnDoe@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <span className="text-red-500">{errors.email}</span>
           </div>
-          <div className="flex flex-col mt-5 md:ml-5 md:w-[50%]">
+          <div className="flex-column mt-5 md:ml-5 md:w-[50%]">
             <label className="">Phone</label>
             <input
-              type="number"
+              type="phone"
               style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-              className="focus:bg-black-100 mt-2 border border-solid border-gray-400 p-2 rounded w-[100%]"
-              placeholder="+234567890"
+              className="focus:bg-black-100 mt-2 border-group w-[100%]"
+              placeholder="+2341234567890"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -157,20 +154,20 @@ const Form = () => {
           <input
             type="text"
             style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-            className="focus:bg-black-100 mt-2 border border-solid border-gray-400 p-2 rounded w-[100%]"
+            className="focus:bg-black-100 mt-2 border-group w-[100%]"
             placeholder="Enter your Subject..."
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
           <span className="text-red-500">{errors.subject}</span>
         </div>
-        <div className="flex flex-col mt-5">
+        <div className="flex-column mt-5">
           <label className="">Message</label>
           <textarea
             type="text"
             placeholder="Enter your message here.."
             style={{ backgroundColor: 'rgba(241, 241, 243, 1)'}}
-            className="focus:bg-black-100 mt-2 h-[100px] border border-solid border-gray-400  p-2 rounded w-[100%]"
+            className="focus:bg-black-100 mt-2 h-[100px] border-group w-[100%]"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />

@@ -43,6 +43,7 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
 .sticky .header-logo {
   @apply py-1 lg:py-1;
 }
@@ -58,6 +59,39 @@
 .hero__title {
   @apply sm:text-[42px] text-[40px] font-extrabold;
 }
+
+
+/* CONTACT PAGE STYLES */
+.flex-column {
+  @apply flex flex-col;
+}
+
+.border-group {
+  @apply border border-solid border-gray-400 p-2 rounded;
+}
+
+/* Responsive changes for small screens (sm) and below */
+@media (max-width: 640px) {
+  .flex-start {
+    @apply block;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 2;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 5s;
+  /* Adjust the duration to your desired value */
+}
+
 .hero__gradient_text {
   @apply bg-gradient-to-r from-emerald-600 via-[#DAEC08F0] to-[#E31F1BE3] bg-clip-text text-5xl text-transparent;
 }
@@ -65,7 +99,38 @@
 /* In your global CSS file */
 .courses-hero-background {
   @apply bg-cover bg-center py-24 px-4 text-white;
-  background-image: url('/assets/image/courses/courses-hero-background.png');
+  background-image: url("/assets/image/courses/courses-hero-background.png");
+}
+
+.custom-btn svg path {
+  fill: #FFFFFF;
+}
+
+.rotate-arrow {
+  display: inline-block;
+  /* Needed to transform inline svg arrow elements */
+  transform: rotate(-45deg);
+}
+
+/* Needed for paragraph sub headings */
+.text-paragraph {
+  @apply text-lg;
+}
+
+/* about hero section */
+.about-hero-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.box-shadow {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow2 {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.09);
 }
   .box-shadow {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
