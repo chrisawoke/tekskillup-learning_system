@@ -49,7 +49,7 @@
 }
 
 .custom-btn {
-  @apply bg-primary_700 text-white sm:px-8 py-[8px] px-10 sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer;
+  @apply bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium bg-primary_700 text-white sm:px-8 py-[8px] px-10 sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer;
 }
 
 .hero__title {
