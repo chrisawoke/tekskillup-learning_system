@@ -1,10 +1,10 @@
 
-import About from "@/components/About";
+import HomeBenefits from "@/components/About";
 import BrandsLogo from "@/components/BrandsLogo";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
+import HomeFeatures from "@/components/HomeFeatures/HomeFeatures";
 import ServiceStats from "@/components/ServiceStats";
-import Feature from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
       <Hero/>
       <BrandsLogo/>
       <ServiceStats/>
-      <About/>
-      <Feature/>
+      <HomeBenefits/>
+      <HomeFeatures/>
     </main>
   );
   }

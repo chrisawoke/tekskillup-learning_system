@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const About = () => {
+const HomeBenefits = () => {
   return (
     <>
-      {/* <!-- ===== About Start ===== --> */}
+      {/* <!-- ===== HomeBenefits Start ===== --> */}
       <section>
         <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
@@ -28,9 +28,6 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              {/* <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
-              </h4> */}
               <h2 className="relative mb-6 text-black dark:text-white xl:text-hero text-center text-4xl font-extrabold leading-[60px] inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg">
                 What is Tekskillup?
               </h2>
@@ -91,7 +88,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <!-- ===== About End ===== --> */}
+      {/* <!-- ===== HomeBenefits End ===== --> */}
 
 
       {/* <!-- ===== About Break Section Starts ===== --> */}
@@ -102,7 +99,7 @@ const About = () => {
 
 
 
-      {/* <!-- ===== About Two Start ===== --> */}
+      {/* <!-- ===== HomeBenefits Two Start ===== --> */}
       <section className="mt-20 overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8  lg:gap-32.5">
@@ -157,28 +154,17 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right md:w-1/2"
             >
-              {/* <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  New
-                </span>{" "}
-                SaaS Boilerplate for Next.js
-              </span> */}
               <h2 className="relative mb-6 mt-20 text-4xl font-bold text-black dark:text-white xl:text-hero inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
                  Benefit from our online learning expert
               </h2>
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
-              </p> */}
-
               <div className="mt-[17.5] flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border">
                   <Image
-               src="/assets/icons/case.svg"
-               width={5}
-               height={5}
+               src="/assets/icons/briefcase.svg"
+               width={40}
+               height={40}
                 alt="About"
-                className=" w-[575.94px] h-[500px] rounded-[14.79px] border-2 border-black border-opacity-30"
+                className=" w-[40] h-[40] rounded-[14.79px]"
               />
                 </div>
                 <div className="w-3/4">
@@ -189,9 +175,13 @@ Contrary to popular belief, Lorem sof hs gig hhhhh</p>
               </div>
               <div className="mt-[17.5] flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
+                  <Image
+               src="/assets/icons/3-layers.svg"
+               width={40}
+               height={40}
+                alt="About"
+                className=" w-[40] h-[40] rounded-[14.79px]"
+              />
                 </div>
                 <div className="w-3/4">
                   <h3 class="text-black text-3xl font-semibold font-['Open Sans'] leading-[39px]">Short Course</h3>
@@ -201,12 +191,16 @@ Contrary to popular belief, Lorem sof hs gig hhhhh</p>
               </div>
               <div className="mt-[17.5] flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
+<Image
+               src="/assets/icons/user.svg"
+               width={40}
+               height={40}
+                alt="About"
+                className=" w-[40] h-[30] rounded-[14.79px]"
+              />
                 </div>
                 <div className="w-3/4">
-                  <h3 class="text-black text-3xl font-semibold font-['Open Sans'] leading-[39px]">Short Course</h3>
+                  <h3 class="text-black text-3xl font-semibold font-['Open Sans'] leading-[39px]">Learn with Expert</h3>
                   <p>Contrary to popular belief, Lorem sof hs gig hhhhh
 Contrary to popular belief, Lorem sof hs gig hhhhh</p>
                 </div>
@@ -215,9 +209,9 @@ Contrary to popular belief, Lorem sof hs gig hhhhh</p>
           </div>
         </div>
       </section>
-      {/* <!-- ===== About Two End ===== --> */}
+      {/* <!-- ===== HomeBenefits Two End ===== --> */}
     </>
   );
 };
 
-export default About;
+export default HomeBenefits;
