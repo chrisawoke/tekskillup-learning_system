@@ -175,10 +175,10 @@ const About = () => {
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border">
                   <Image
                src="/assets/icons/case.svg"
-               width={5}
-               height={5}
+               width={50}
+               height={50}
                 alt="About"
-                className=" w-[575.94px] h-[500px] rounded-[14.79px] border-2 border-black border-opacity-30"
+                className=" w-[50] h-[50] rounded-[14.79px] border-2 border-black border-opacity-30"
               />
                 </div>
                 <div className="w-3/4">
@@ -189,9 +189,13 @@ Contrary to popular belief, Lorem sof hs gig hhhhh</p>
               </div>
               <div className="mt-[17.5] flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
+                  <Image
+               src="/assets/icons/crown.svg"
+               width={50}
+               height={50}
+                alt="About"
+                className=" w-[50] h-[50] rounded-[14.79px] border-2 border-black border-opacity-30"
+              />
                 </div>
                 <div className="w-3/4">
                   <h3 class="text-black text-3xl font-semibold font-['Open Sans'] leading-[39px]">Short Course</h3>
@@ -201,9 +205,13 @@ Contrary to popular belief, Lorem sof hs gig hhhhh</p>
               </div>
               <div className="mt-[17.5] flex items-center gap-5">
                 <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
+                  <Image
+               src="/assets/icons/bolt-shield.svg"
+               width={50}
+               height={50}
+                alt="About"
+                className=" w-[50] h-[50] rounded-[14.79px] border-2 border-black border-opacity-30"
+              />
                 </div>
                 <div className="w-3/4">
                   <h3 class="text-black text-3xl font-semibold font-['Open Sans'] leading-[39px]">Short Course</h3>

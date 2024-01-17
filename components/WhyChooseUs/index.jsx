@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import featuresData from "./WhyChooseUs";
 import SingleFeature from "./SingleFeature";
 
@@ -10,15 +9,10 @@ const Feature = () => {
       <section id="features" className="py-20 lg:py-25 xl:py-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
-          <div className="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
-          <span className="text-sectiontitle font-medium text-black dark:text-white">
-            Why Choose Us?
-          </span>
-        </div>
         <h2 className="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">
           Why Choose Us?
         </h2>
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. 
+        <p className="">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. 
             ante in maximus</p>
           {/* <!-- Section Title End --> */}
 
