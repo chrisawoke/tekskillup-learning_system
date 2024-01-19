@@ -36,11 +36,11 @@ const ToBegin = () => {
         {toBeginItems.map((item, index) => (
           <h3
             key={index}
-            className={` font-bold border-b border-transparent ${
+            className={` font-bold border-b ${
               index === activeIndex
                 ? "border-black text-black pointer-events-none"
-                : ""
-            } text-gray-600 hover:text-black hover:cursor-pointer transition-all`}
+                : "text-gray-600  border-transparent"
+            }  hover:text-black hover:cursor-pointer transition-all`}
             onClick={() => desktopHeadingClick(index)}>
             {item.heading}
           </h3>
