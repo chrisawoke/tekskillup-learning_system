@@ -1,5 +1,4 @@
-
-import HomeBenefits from "@/components/About";
+import HomeBenefits from "@/components/About"
 import BrandsLogo from "@/components/BrandsLogo";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
@@ -17,4 +16,4 @@ export default function Home() {
       <HomeFeatures/>
     </main>
   );
-  }
+}
