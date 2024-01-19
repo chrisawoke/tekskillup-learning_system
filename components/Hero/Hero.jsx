@@ -6,7 +6,7 @@ const Hero = () => {
 
     <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
         <div className="sm:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl tracking-tight font-extrabold text-black sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Study Online Swiftly,</span>
                 <span className="block bg-gradient-to-r from-emerald-600 via-[#DAEC08F0] to-[#E31F1BE3] bg-clip-text text-transparent xl:inline">Conveniently</span>& Affordable
             </h1>
