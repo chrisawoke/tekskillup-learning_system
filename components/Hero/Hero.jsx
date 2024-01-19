@@ -2,20 +2,20 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="md:px-0 mb-24 md:mb-0">
+    <section className="container max-width md:px-0 mb-24 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
         <div className="pr-20 pl-0 pb-6 lg:pb-48 relative">
           <div className="pt-4 ml-10 md:pt-12">
-            <p className="text-black text-4xl -ml-5 hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
+            <p className="text-black p-40 hero__title text-sm md:text-base leading-tight text-center md:text-left">
               Study Online Swiftly,
-              <span className="hero__gradient_text">
+              <span className="hero__gradient_text hero__title p-40 ">
                 Conveniently
               </span>
                 <br />&
               Affordable
             </p>
             <div className="my-6 md:my-12 lg:my-8">
-              <p className="text-sm md:text-lg text-center md:text-left">
+              <p className="flex items-center text-sm md:text-base">
                 Grow with Online Design and Development Courses. <br />
                 Learn from Industry Experts and Enhance Your Skills.
               </p>

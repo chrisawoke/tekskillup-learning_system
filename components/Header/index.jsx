@@ -139,7 +139,7 @@ const Header = () => {
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block">
                   Login
                 </Link>
-                <Link href="/signup" className="custom-btn">
+                <Link href="/signup" className="custom-btn hidden md:flex">
                   Get Started
                 </Link>
                 <div></div>

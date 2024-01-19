@@ -88,7 +88,7 @@
 }
 
 .hero__gradient_text {
-  @apply bg-gradient-to-r from-emerald-600 via-[#DAEC08F0] to-[#E31F1BE3] bg-clip-text text-5xl text-transparent sm:text-[42px];
+  @apply bg-gradient-to-r from-emerald-600 via-[#DAEC08F0] to-[#E31F1BE3] bg-clip-text text-transparent;
 }
 
 /* In your global CSS file */
