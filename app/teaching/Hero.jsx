@@ -11,11 +11,13 @@ const Hero = () => {
         <p className="text-sm lg:text-[20px] lg:leading-8 md:w-[80%]">
           Become an instructor and change lives - including your own
         </p>
-       <div className="md:w-[45%] w-full">
-       <a href="/">
-          <button className="custom-btn lg:mt-8 md:mt-5 mt-3 w-full">Get started</button>
-        </a>
-       </div>
+        <div className="md:w-[45%] w-full">
+          <a href="/">
+            <button className="custom-btn lg:mt-8 md:mt-5 mt-3 w-full">
+              Get started
+            </button>
+          </a>
+        </div>
       </div>
       <div className="w-[70%] h-full md:w-[40%]  md:block flex-center md:flex-row flex-col">
         <Image

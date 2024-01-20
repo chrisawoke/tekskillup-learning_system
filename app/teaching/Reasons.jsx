@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Reasons = () => {
   return (
-    <section className="text-center padding-x md:py-16 pt-20">
+    <section className="text-center padding-x md:py-24 pt-20">
       <h2 className="font-bold lg:text-4xl md:text-2xl text-[1.35rem]">
         So many reasons to start
       </h2>
@@ -11,7 +11,8 @@ const Reasons = () => {
         {reasons.map((reason, index) => (
           <div
             key={index}
-            className=" h-fit text-center flex-center flex-col md:w-[28%] w-[60%] rounded-[0.875rem] hover:scale-105 md:mb-[1rem] mb-[3rem] hover:bg-white transition-all">
+            className=" h-fit text-center flex-center flex-col md:w-[28%] w-[60%] rounded-[0.875rem] hover:scale-105 md:mb-[1rem] mb-[3rem] hover:bg-white transition-all"
+          >
             <Image
               src={reason.imgUrl}
               alt=""
