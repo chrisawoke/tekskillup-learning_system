@@ -14,11 +14,12 @@ const OurTeam = () => {
         With over 100 years or combined experience, we&apos;ve got a well-seasoned
         team at the helm.
       </p>
-      <div className="flex-between lg:gap-[2.5rem] md:gap-[1.5rem] mt-32 md:flex-nowrap flex-wrap">
+      
+      <div className="flex-between lg:gap-[2.5rem] md:gap-[1.5rem] sm:mt-32 mt-24 md:flex-nowrap flex-wrap">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="relative md:w-[25%] w-[47%] mb-[7rem] bg-white"
+            className="relative md:w-[25%] w-[47%] sm:mb-[7rem] mb-[4rem] bg-white"
             onMouseEnter={() => setHoveredMember(index)}
             onMouseLeave={() => setHoveredMember(null)}>
             <div
@@ -36,12 +37,12 @@ const OurTeam = () => {
             <p className="lg:text-[.7rem] sm:text-[0.65rem] text-[0.5rem] font-semibold">{member.position}</p>
             
             <div
-              className="absolute sm:-top-20 -top-12 flex-center flex-col text-center bg-[rgba(0,0,0,0.6)] w-[100%] sm:h-[22rem] h-[14rem] px-5 text-white"
+              className="absolute sm:-top-20 -top-14 flex-center flex-col text-center bg-[rgba(0,0,0,0.6)] w-[100%] sm:h-[22rem] h-[15.5rem] px-5 text-white rounded-md"
               style={{
                 opacity: hoveredMember === index ? 1 : 0,
                 transition: "opacity 0.3s ease",
               }}>
-              <p className="lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">{member.bio}</p>
+              <p className="lg:text-base md:text-[.78rem] sm:text-[0.85rem] text-[0.625rem]">{member.bio}</p>
               <div className="flex-center gap-2 mt-8">
                 {teamSocialIcons.map((icon) => (
                   <a href={member.socials[icon.key]} key={icon.key}>
