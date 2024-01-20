@@ -9,7 +9,7 @@ const ToBegin = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeIndices, setActiveIndices] = useState([]);
 
-  const mobileHeadingClick = (index) => {
+  const handlemobileHeadingClick = (index) => {
     setActiveIndices((prevIndices) => {
       if (prevIndices.includes(index)) {
         // If the index is already in the active indices, remove it
@@ -19,9 +19,9 @@ const ToBegin = () => {
         return [...prevIndices, index];
       }
     });
- };
+  };
 
-  const desktopHeadingClick = (index) => {
+  const handledesktopHeadingClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
@@ -41,7 +41,8 @@ const ToBegin = () => {
                 ? "border-black text-black pointer-events-none"
                 : "text-gray-600  border-transparent"
             }  hover:text-black hover:cursor-pointer transition-all`}
-            onClick={() => desktopHeadingClick(index)}>
+            onClick={() => handledesktopHeadingClick(index)}
+          >
             {item.heading}
           </h3>
         ))}
@@ -50,12 +51,13 @@ const ToBegin = () => {
       {/* mobile navigation and body  */}
       <div className="border-b md:border-transparent border-gray-300 w-full mt-10">
         {toBeginItems.map((item, index) => (
-          <div key={index} className="w-full hover:cursor-pointer transition-all" onClick={() => mobileHeadingClick(index)} >
+          <div
+            key={index}
+            className="w-full hover:cursor-pointer transition-all"
+            onClick={() => handlemobileHeadingClick(index)}
+          >
             <div className="md:hidden justify-between items-center flex border-t border-gray-300 py-3">
-              <h3
-                className=" font-bold text-black">
-                {item.heading}
-              </h3>
+              <h3 className=" font-bold text-black">{item.heading}</h3>
               <FaAngleDown
                 size={13}
                 className={`transition-transform duration-300 transform ${
@@ -66,12 +68,18 @@ const ToBegin = () => {
 
             {/* body/content (desktop) */}
             <div
-              className={`md:${index === activeIndex ? "flex" : "hidden"} hidden justify-center items-center h-[18rem] md:gap-16 lg:px-20 md:px-0`}
-             >
+              className={`md:${
+                index === activeIndex ? "flex" : "hidden"
+              } hidden justify-center items-center h-[18rem] md:gap-16 lg:px-20 md:px-0`}
+            >
               <div className="md:w-[40%] w-full">
                 <p className="lg:text-base md:text-[.78rem]">{item.detail1a}</p>
-                <p className="lg:text-base md:text-[.78rem] mt-2">{item.detail1b}</p>
-                <h4 className="font-bold my-4 lg:text-lg md:text-[.88rem] ">How we help you</h4>
+                <p className="lg:text-base md:text-[.78rem] mt-2">
+                  {item.detail1b}
+                </p>
+                <h4 className="font-bold my-4 lg:text-lg md:text-[.88rem] ">
+                  How we help you
+                </h4>
                 <p className="lg:text-base md:text-[.78rem]">{item.detail2}</p>
               </div>
               <div className=" md:w-[30%] w-full h-full flex-center">
@@ -87,13 +95,23 @@ const ToBegin = () => {
 
             {/* body/content (mobile) */}
             <div
-              className={` md:hidden ${activeIndices.includes(index) ? "flex" : "hidden"} justify-center items-center flex-col-reverse h-fit md:p-16 py-4 md:px-32 px-0`}
-              >
+              className={` md:hidden ${
+                activeIndices.includes(index) ? "flex" : "hidden"
+              } justify-center items-center flex-col-reverse h-fit md:p-16 py-4 md:px-32 px-0`}
+            >
               <div className=" w-full">
-                <p className=" ml-5 sm:text-[0.9rem] text-[0.8rem]">{item.detail1a}</p>
-                <p className=" ml-5 sm:text-[0.9rem] text-[0.8rem]">{item.detail1b}</p>
-                <h4 className="font-bold my-4 sm:[1rem] text-[.88rem] ">How we help you</h4>
-                <p className="ml-5 sm:text-[0.9rem] text-[0.8rem]">{item.detail2}</p>
+                <p className=" ml-5 sm:text-[0.9rem] text-[0.8rem]">
+                  {item.detail1a}
+                </p>
+                <p className=" ml-5 sm:text-[0.9rem] text-[0.8rem]">
+                  {item.detail1b}
+                </p>
+                <h4 className="font-bold my-4 sm:[1rem] text-[.88rem] ">
+                  How we help you
+                </h4>
+                <p className="ml-5 sm:text-[0.9rem] text-[0.8rem]">
+                  {item.detail2}
+                </p>
               </div>
               <div className=" w-[50%] mb-10 h-full flex-center">
                 <Image

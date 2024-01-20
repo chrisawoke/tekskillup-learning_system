@@ -9,7 +9,7 @@ const OurMission = () => {
 
   return (
     <section className=" relative">
-      <div className="flex-between md:flex-row flex-col padding-x md:pt-28 pt-20  md:pb-40 pb-20 lg:gap-[2.2rem] md:gap-[1.5rem] gap-[1.8rem]">
+      <div className="flex-between md:flex-row flex-col padding-x md:pt-28 pt-20  md:pb-40 pb-20 lg:gap-[2.2em] md:gap-[1.5em] gap-[1.8em]">
         {goals.map((goal, index) => (
           <div
             key={index}
@@ -19,10 +19,21 @@ const OurMission = () => {
               transition: "border-color 0.3s ease",
             }}
             onMouseEnter={() => setHoveredGoal(index)}
-            onMouseLeave={() => setHoveredGoal(null)}>
-            <Image src={goal.imgUrl} alt="" width={50} height={50} className=" md:w-[3rem] w-[2.5rem]"/>
-            <h3 className="font-bold lg:text-xl md:text-base sm:text-xl text-base lg:my-4 my-2">{goal.title}</h3>
-            <p className="md:h-[14rem] h-fit lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">{goal.detail}</p>
+            onMouseLeave={() => setHoveredGoal(null)}
+          >
+            <Image
+              src={goal.imgUrl}
+              alt=""
+              width={50}
+              height={50}
+              className=" md:w-[3rem] w-[2.5rem]"
+            />
+            <h3 className="font-bold lg:text-xl md:text-base sm:text-xl text-base lg:my-4 my-2">
+              {goal.title}
+            </h3>
+            <p className="md:h-[14rem] h-fit lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.825rem]">
+              {goal.detail}
+            </p>
           </div>
         ))}
       </div>

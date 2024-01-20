@@ -1,9 +1,8 @@
 import Image from "next/image";
-import React from "react";
 
-const Hero = () => {
+const LearningHero = () => {
   return (
-    <section className="md:px-12 flex md:justify-between justify-center items-center md:flex-row flex-col-reverse bg-[#076A550D]">
+    <section className="md:px-12 flex-center md:justify-between md:flex-row flex-col-reverse bg-[#076A550D] py-16">
       <div className="md:block flex-center md:flex-row flex-col md:px-0 px-[1.75rem] md:pt-0 pt-10 w-full md:w-[50%] md:bg-transparent bg-white">
         <h1 className="font-bold text-2xl lg:text-5xl lg:mb-8 md:mb-5 mb-3">
           Come teach with us Come teach with us
@@ -31,4 +30,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default LearningHero;
