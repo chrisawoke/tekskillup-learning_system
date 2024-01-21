@@ -112,7 +112,7 @@ const Form = () => {
         </div>
         <div className="mt-7 text-center">
           <p className="text-lg">
-            Don't have an account? &nbsp;{" "}
+            Don&apos;t have an account? &nbsp;{" "}
             <a href="" className="text-blue-500 hover:text-[1.1em]">
               Sign Up
             </a>{" "}
