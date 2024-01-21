@@ -40,6 +40,7 @@ const Courses = () => {
               course.map((item) => {
                 return (
                   <button 
+                    key={item.id}
                     className='rounded-[10px] lg:w-[159px] xs:w-[100px] p-[8px] text-center text-[#000] lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter'
                     style={{border: `1px solid rgba(0, 0, 0, 0.30)`}}
                     onClick={() => {course_filter(item)}}
@@ -57,8 +58,8 @@ const Courses = () => {
                 return (
                   <div key={item.id}>
                     <div style={{boxShadow: `0px 0px 4px 2px rgba(0, 0, 0, 0.10)`}} className='bg-[#fff] rounded-[8px] p-[10px]'>
-                      <Image src={item.image} width='340' height='196' loading='lazy' />
-                      <h1 className='flex gap-[5px] items-center mt-[34px]'><Image src='/assets/icons/play.svg' width='24' height='24' /> <span className='text-[#00000080] text-[12px] leading-[18px] font-[600] font-inter'>{item.plays} Plays</span></h1>
+                      <Image src={item.image} width='340' height='196' loading='lazy' alt='' />
+                      <h1 className='flex gap-[5px] items-center mt-[34px]'><Image src='/assets/icons/play.svg' width='24' height='24' alt='' /> <span className='text-[#00000080] text-[12px] leading-[18px] font-[600] font-inter'>{item.plays} Plays</span></h1>
                       <h1 className='text-[#000] text-[20px] font-[700] leading-[30px] font-inter mt-[15px]'>{item.heading}</h1>
                      <div className='flex gap-[37px] mt-[20px]'>
                         <div className='flex gap-[10px] items-start'>

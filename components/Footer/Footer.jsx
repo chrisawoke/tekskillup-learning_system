@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='xs:px-[0.75rem] lg:px-[5rem] w-[100vw] lg:ms-[-2rem]'>
             <div className='lg:flex lg:flex-wrap justify-between gap-[128px] bg-[#fff] mt-[5rem] pt-[78px] pb-[50px]' style={{ borderTop: `1px solid rgba(0, 0, 0, 0.15)`, borderBottom: `1px solid rgba(0, 0, 0, 0.15)` }}>
                 <div>
-                    <Image src='/assets/image/Logo.png' width='150' height='150' loading='lazy' />
+                    <Image src='/assets/image/Logo.png' width='150' height='150' loading='lazy' alt='' />
                     <h2 className='text-[#59595A] text-[16px] leading-[24px] font-[400] font-inter mt-5 flex items-center gap-1'><IoMdMail /> hello@Tekskillup.com</h2>
                     <h2 className='text-[#59595A] text-[16px] leading-[24px] font-[400] font-inter mt-5 flex items-center gap-1'><FaPhoneAlt /> +91 91813 23 2309</h2>
                     <h2 className='text-[#59595A] text-[16px] leading-[24px] font-[400] font-inter mt-5 flex items-center gap-1'><IoLocationSharp /> Somewhere in the World</h2>
@@ -42,13 +42,13 @@ const Footer = () => {
             <div>
                 <center className='flex items-center gap-5 mt-12 lg:ms-[32rem] xs:ms-[7rem]'>
                     <div className='bg-[#F7F7F8] border-1 border-[#F1F1F3] border-solid rounded-[6px] p-[12px]'>
-                        <Image src='/assets/icons/facebook.svg' width='20' height='20' loading='lazy' />
+                        <Image src='/assets/icons/facebook.svg' width='20' height='20' loading='lazy' alt='' />
                     </div>
                     <div className='bg-[#F7F7F8] border-1 border-[#F1F1F3] border-solid rounded-[6px] p-[12px]'>
-                        <Image src='/assets/icons/twitter.svg' width='20' height='20' loading='lazy' />
+                        <Image src='/assets/icons/twitter.svg' width='20' height='20' loading='lazy' alt='' />
                     </div>
                     <div className='bg-[#F7F7F8] border-1 border-[#F1F1F3] border-solid rounded-[6px] p-[12px]'>
-                        <Image src='/assets/icons/linkedin.svg' width='20' height='20' loading='lazy' />
+                        <Image src='/assets/icons/linkedin.svg' width='20' height='20' loading='lazy' alt='' />
                     </div>
                 </center>
                 <h1 className='text-[#656567] text-[14px] text-center font-[400] leading-[21px] font-inter mt-5'>© 2024 Tekskillup. All rights reserved.</h1>

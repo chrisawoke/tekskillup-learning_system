@@ -16,13 +16,13 @@ const testimonial = () => {
           <h3 className='text-[#696984] text-[18px] font-[400] leading-[32px] font-inter mt-[20px]'>Are you too? Please give your assessment</h3>
         </div>
         <div>
-          <Image src='/assets/image/Frame 427320641.png' width='330' height='330' className='lg:ms-[3rem] xs:mt-[5rem] lg:mt-0' />
-          <h3 className='text-[#696984] text-[18px] font-[400] leading-[36px] font-inter lg:w-[533px] mt-[52px]'>"Thank you so much for your help. It's exactly what I've been looking for. You won't regret it. It really saves me time and effort. Tekskillup is exactly what our business has been lacking."</h3>
+          <Image src='/assets/image/Frame 427320641.png' width='330' height='330' className='lg:ms-[3rem] xs:mt-[5rem] lg:mt-0' alt='' />
+          <h3 className='text-[#696984] text-[18px] font-[400] leading-[36px] font-inter lg:w-[533px] mt-[52px]'>&quot;Thank you so much for your help. It&apos;s exactly what I&apos;ve been looking for. You won&apos;t regret it. It really saves me time and effort. Tekskillup is exactly what our business has been lacking.&quot;</h3>
           <h3 className='text-[#000] text-[18px] font-[600] font-inter mt-[20px]'>Samson James</h3>
           <h3 className='text-[18px] font-[600] leading-[39.418px] font-inter mt-[3px]' style={{ color: `rgba(0, 0, 0, 0.50)` }}>Lorem sempe tr</h3>
           <div className='flex lg:gap-[43px] lg:ms-[-0.7rem]'>
-            <Image src='/assets/image/L-arrow.svg' width='72' height='72' />
-            <Image src='/assets/image/R-arrow.svg' width='72' height='72' />
+            <Image src='/assets/image/L-arrow.svg' width='72' height='72' alt='' />
+            <Image src='/assets/image/R-arrow.svg' width='72' height='72' alt='' />
           </div>
         </div>
       </div>
