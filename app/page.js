@@ -1,4 +1,12 @@
-import About from "@/components/About";
+// import Header from "@/components/Header";
+// import Hero from "@/components/Hero/Hero";
+import Categories from "@/components/Categories/Categories"
+import Courses from "@/components/Fea-Courses/Courses"
+import Testimonial from "@/components/Testimonials/testimonial"
+import Faq from "@/components/Faq/Faq";
+import Footer from "@/components/Footer/Footer";
+
+// import About from "@/components/About";
 import BrandsLogo from "@/components/BrandsLogo";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
@@ -12,8 +20,13 @@ export default function Home() {
       <Hero />
       <BrandsLogo />
       <ServiceStats />
-      <About />
+      {/* <About /> */}
       <Feature />
+      <Categories />
+      <Courses/>
+      <Testimonial />
+      <Faq />
+      <Footer />
     </main>
   );
 }

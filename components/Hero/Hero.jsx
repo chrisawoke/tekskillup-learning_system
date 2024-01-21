@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="md:px-0 mb-24 md:mb-0">
+    <section className="max-width md:px-12 mx-auto mb-24 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
         <div className="pr-20 pl-0 pb-6 lg:pb-48 relative">
           <div className="pt-4 -ml-10 md:pt-12">
