@@ -213,3 +213,59 @@ export const toBeginItems = [
     detail2: "Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to courses. There’s even more opportunity for courses chosen for Udemy Business.",
   },
 ];
+
+export const mockLineData = [
+  {
+      id: "japan",
+      data: [
+          {
+              x: "January",
+              y: 101,
+          },
+          {
+              x: "Febraury",
+              y: 75,
+          },
+          {
+              x: "March",
+              y: 36,
+          },
+          {
+              x: "April",
+              y: 216,
+          },
+          {
+              x: "May",
+              y: 35,
+          },
+          {
+              x: "June",
+              y: 236,
+          },
+          {
+              x: "July",
+              y: 88,
+          },
+          {
+              x: "August",
+              y: 232,
+          },
+          {
+              x: "September",
+              y: 281,
+          },
+          {
+              x: "october",
+              y: 1,
+          },
+          {
+              x: "November",
+              y: 35,
+          },
+          {
+              x: "December",
+              y: 14,
+          },
+      ],
+  },
+];
