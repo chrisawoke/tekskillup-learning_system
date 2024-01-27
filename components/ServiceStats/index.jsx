@@ -1,34 +1,69 @@
-import React from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { MdOutlineArrowForward } from 'react-icons/md';
 
 const ServiceStats = () => {
-  return <div class="max-w-4xl mx-auto  px-0 sm:px-6 lg:py-24 lg:px-0">
-          <h2 class="text-2xl mt-10 font-extrabold text-center text-gray-900 sm:text-4xl">Our Success</h2>
-         <p class="text-center text-black text-opacity-80 text-xl font-normal font-['Open Sans'] leading-loose">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
-         <div class="grid grid-cols-1 gap-6 text-gray-500 sm:gap-2 sm:grid-cols-1 lg:grid-cols-5 md:grid-cols-3 dark:text-gray-400">
-            <div class="px-[-10] py-5 sm:p-6">
-                <h1 class="text-teal-600 text-[50px] font-semibold pb-10 pr-10 font-['Open Sans'] leading-10">15K+</h1>
-                    <p class="text-slate-950 mt-5  text-opacity-80 text-xl font-normal font-['Open Sans'] leading-relaxed">Students</p>
-                
+  return (
+    <div class="relative mx-auto md:pt-16 lg:pt-24">
+            <h2 class="text-4xl pt-4 md:pt-0 my-10 font-extrabold text-center text-gray-900 md:text-5xl lg:text-[3rem]">Our Success</h2>
+            <div className="flex-center pb-10 md:pb-16">
+                <p class="md:px-24 lg:px-0 md:max-w-4xl text-center px-16 text-black text-opacity-80 text-sm md:text-xl font-normal leading-snug">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
             </div>
-            <div class="px-4 py-5 sm:p-6">
-                <h1 class="text-teal-600 text-[50px] font-semibold pb-10 pr-10 font-['Open Sans'] leading-10">35</h1>
-                    <p class="text-slate-950 text-xl font-normal font-['Open Sans'] leading-relaxed">Main questions</p>
+            <div class="max-width px-8 grid grid-cols-2 md:grid-cols-5 md:gap-6 text-gray-500 dark:text-gray-400">
+                <div class="py-5 md:p-6 text-center">
+                    <h1 class="text-teal-600 text-[1.8rem] md:text-[2.5rem] lg:text-[3.1rem] font-bold md:font-semibold pb-4 md:pb-10 leading-0 md:leading-10">15K+</h1>
+                        <p class="text-slate-950 text-opacity-80  text-sm md:text-base lg:text-xl font-normal leading-relaxed">Students</p>
+                    
+                </div>
+                <div class="py-5 md:p-6 text-center">
+                    <h1 class="text-teal-600 text-[1.8rem] md:text-[2.5rem] lg:text-[3.1rem] font-bold md:font-semibold pb-4 md:pb-10 leading-0 md:leading-10">35</h1>
+                        <p class="text-slate-950 text-sm md:text-base lg:text-xl font-normal leading-relaxed">Main questions</p>
+                </div>
+                <div class="py-5 md:p-6 text-center">
+                    <h1 class="text-teal-600 text-[1.8rem] md:text-[2.5rem] lg:text-[3.1rem] font-bold md:font-semibold pb-4 md:pb-10 leading-0 md:leading-10">75%</h1>
+                        <p class="text-slate-950 text-opacity-80 text-sm md:text-base lg:text-xl font-normal leading-relaxed">Total success</p>
+                </div>
+            
+                <div class="py-5 md:p-6 text-center">
+                    <h1 class="text-teal-600 text-[1.8rem] md:text-[2.5rem] lg:text-[3.1rem] font-bold md:font-semibold pb-4 md:pb-10 leading-0 md:leading-10">16</h1>
+                        <p class="text-slate-950 text-opacity-80 text-sm md:text-base lg:text-xl font-normal leading-relaxed">Years of experience</p>
+                </div>
+                <div class="py-5 md:p-6 text-center">
+                    <h1 class="text-teal-600 text-[1.8rem] md:text-[2.5rem] lg:text-[3.1rem] font-bold md:font-semibold pb-4 md:pb-10 leading-0 md:leading-10">26</h1>
+                        <p class="text-slate-950 text-opacity-80 text-sm md:text-base lg:text-xl font-normal leading-relaxed">Chief experts</p>
+                </div>
+        </div>
+        <div className="max-width px-8 md:px-24 flex flex-col lg:flex-row my-16 md:my-24 gap-16 md:gap-44 justify-between">
+            <Image
+                src="/assets/image/education.svg"
+                alt="hero-image"
+                width="100"
+                height="100"
+                className="w-full object-cover"
+            />
+            <div className="">
+                <h2 className="text-center lg:text-start font-extrabold text-4xl pb-8">
+                    What is Tekskillup?
+                </h2>
+                <p className='leading-[42px] font-[1.5rem]'>Tekskillup is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
+                <Link href='#'
+                    className='flex items-center text-green_600 mt-10'
+                >
+                    Learn more
+                    <MdOutlineArrowForward className='text-green_600 ml-2' />
+                </Link>
             </div>
-            <div class="px-4 py-5 sm:p-6">
-                <h1 class="text-teal-600 text-[50px] font-semibold pb-10 pr-10 font-['Open Sans'] leading-10">75%</h1>
-                    <p class="text-slate-950 text-opacity-80 text-xl font-normal font-['Open Sans'] leading-relaxed">Total success</p>
-            </div>
-        
-            <div class="px-4 py-5 sm:p-6">
-                <h1 class="text-teal-600 text-[50px] font-semibold pb-10 pr-10 font-['Open Sans'] leading-10">16</h1>
-                    <p class="text-slate-950 text-opacity-80 text-xl font-normal font-['Open Sans'] leading-relaxed">Years of experience</p>
-            </div>
-            <div class="px-4 py-5 sm:p-6">
-                <h1 class="text-teal-600 text-[50px] font-semibold pb-10 pr-10 font-['Open Sans'] leading-10">26</h1>
-                    <p class="text-slate-950 text-opacity-80 text-xl font-normal font-['Open Sans'] leading-relaxed">Chief experts</p>
-            </div>
+        </div>
+        <Image
+            src="/assets/image/Frame 2608265.svg"
+            alt="round frame image"
+            width="50"
+            height="50"
+            className="w-[55%] md:w-2/6 absolute bottom-0 right-0 rotate-180"
+        />
+        <div className="bg-teal-800 bg-opacity-5 dark:bg-gray-900 w-full h-16"></div>
     </div>
-</div>;
+  );
 };
 
 export default ServiceStats;
