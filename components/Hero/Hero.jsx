@@ -1,44 +1,55 @@
 import Image from "next/image";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section className="max-width md:px-12 mx-auto mb-24 md:mb-0">
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16">
-        <div className="pr-20 pl-0 pb-6 lg:pb-48 relative">
-          <div className="pt-4 -ml-10 md:pt-12">
-            <p className="text-black text-4xl -ml-5 hero__title md:text-5xl font-semibold leading-tight text-center md:text-left">
-              Study Online Swiftly,
-              <span className="hero__gradient_text">
-                Conveniently
-              </span>
-                <br />&
-              Affordable
-            </p>
-            <div className="my-6 md:my-12 lg:my-8">
-              <p className="text-sm md:text-lg text-center md:text-left">
-                Grow with Online Design and Development Courses. <br />
-                Learn from Industry Experts and Enhance Your Skills.
-              </p>
+    <section className="relative">
+      <div className="max-width mx-auto">
+        <div className="px-8 md:px-24 mt-16 md:mt-28 md:mb-16 z-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 py-20 md:gap-16">
+            <div className="mb-24 md:mb-0">
+              <p className="text-black text-4xl md:text-5xl font-extrabold leading-snug md:leading-normal text-center lg:text-left md:font-extrabold">
+                Study Online Swiftly,
+                <br />
+                  <span className="hero__gradient_text mr-2">
+                    Conveniently
+                  </span>
+                    &
+                  <br />
+                  Affordable 
+                </p>
+                <div className="mt-12 mb-16 lg:mt-10 lg:mb-32">
+                  <p className="text-sm md:text-lg text-center lg:text-left my-3 font-semibold">
+                    Grow with Online Design and Development Courses. 
+                  </p>
+                  <p className="text-sm md:text-lg text-center lg:text-left font-semibold">
+                    Learn from Industry Experts and Enhance Your Skills.
+                  </p>
+                </div>
+                <div className="flex justify-center lg:justify-start">
+                  <button className="custom-btn2 flex justify-center md:justify-start items-center text-center">
+                      Get Started 
+                      <MdOutlineArrowOutward className="text-white ml-1" />
+                  </button>
+                </div>
             </div>
-            <div className="">
-              <button className="custom-btn flex text-center ">Get Started 
-              <svg class="rtl:rotate-180 mt-1 mb-3 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg>
-              </button>
-            </div>
+            <Image
+              src="/assets/image/amico.svg"
+              alt="hero-image"
+              width="100"
+              height="100"
+              className="w-full object-cover"
+            />
           </div>
         </div>
-        <div className="px-8 md:pt-20">
-          <Image
-            src="/assets/image/pana.svg"
-            alt="hero-image"
-            width="100"
-            height="100"
-            className="w-full object-cover"
-          />
-        </div>
       </div>
+      <Image
+        src="/assets/image/Frame 2608265.svg"
+        alt="round frame image"
+        width="50"
+        height="50"
+        className="w-[60%] md:w-2/6 absolute top-0 left-0"
+      />
     </section>
   );
 };
