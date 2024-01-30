@@ -9,16 +9,20 @@ import { FaArrowRight, FaUserAlt  } from "react-icons/fa";
 const Courses = () => {
     const [data, setData] = useState([]);
     const [course, setCourse] = useState([]);
+    const [activeCourse, setActiveCourse] = useState('All');
 
    useEffect(() => {
      setData(AllCourses);
      setCourse([... new Set(AllCourses.map((item) => item.tag))])
-   },[])
+   },[AllCourses])
 
    const course_filter = (itemData) => {
       const filterData = AllCourses.filter((item) => item.tag == itemData);
       setData(filterData);
+      setActiveCourse(itemData);
    }
+
+
 
   return (
     <div className='flex justify-center items-center'>
@@ -28,25 +32,33 @@ const Courses = () => {
 
        <div className='mt-[47px]'>
         <div>
-          <ul className='flex lg:gap-5 xs:gap-3 lg:ms-[15rem]'>
+          <ul className='flex lg:gap-5 xs:gap-2 lg:ms-[15rem]'>
             <li><button 
-                    onClick={() => setData(AllCourses)} 
-                    className='bg-[#0A6A56] rounded-[10px] lg:w-[159px] xs:w-[100px] p-[8px] text-center text-[#fff] lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter'
+                    onClick={() => {
+                    setData(AllCourses)
+                    setActiveCourse('All')
+                  }}
+                    className={`lg:w-[159px] xs:w-[90px] lg:p-[8px] xs:py-[8px] xs:px-[5px] text-center lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter ${
+                      activeCourse === 'All' ? 'bg-[#0A6A56] rounded-[10px] text-[#fff]' : 'text-[#000] rounded-[10px] bg-white border-[1px] border-solid border-[#4D4D4D4D]'
+                    }`}
                 >
-                  General
+                  All
                 </button>
             </li>
             {
               course.map((item) => {
                 return (
-                  <button 
-                    key={item.id}
-                    className='rounded-[10px] lg:w-[159px] xs:w-[100px] p-[8px] text-center text-[#000] lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter'
-                    style={{border: `1px solid rgba(0, 0, 0, 0.30)`}}
-                    onClick={() => {course_filter(item)}}
-                  >
-                    {item}
-                  </button>
+                  <li>
+                      <button 
+                        key={item.id}
+                        className={`lg:w-[159px] xs:w-[90px] lg:p-[8px] xs:py-[8px] xs:px-[5px] text-center lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter ${
+                          activeCourse === item ? 'bg-[#0A6A56] rounded-[10px] text-[#fff]' : 'text-[#000] rounded-[10px] bg-white border-[1px] border-solid border-[#4D4D4D4D]'
+                        }`}
+                        onClick={() => {course_filter(item)}}
+                      >
+                        {item}
+                      </button>
+                  </li>
                 )
               })
             }

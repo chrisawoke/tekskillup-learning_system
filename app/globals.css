@@ -174,3 +174,18 @@
   content: '\f005 \f005 \f005 \f005 \f005';
   color: #f8ce0b;
 }
+
+
+
+/* feature courses */
+.course-btn a:is(:link, :active, :visited) {
+  border-radius: 10px;
+  background: white;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+}
+.course-btn a:is(:link, :active, :visited).active {
+  color: #fff;
+  background-color: #0A6A56;
+  border-radius:
+}
