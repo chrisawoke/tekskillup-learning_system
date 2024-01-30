@@ -2,45 +2,45 @@
 const featuresData = [
   {
     id: 1,
-    icon: "/assets/icons/case.svg",
-    title: "Crafted for SaaS",
+    icon: "/assets/icons/Icon Container.svg",
+    title: "Expert Instruction",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Learn from industry experts who have hands-on experience in design and development.",
   },
   {
     id: 2,
-    icon: "/assets/icons/case.svg",
-    title: "High-quality Design",
+    icon: "/assets/icons/Icon Container (1).svg",
+    title: "Flexible Learning Schedule",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Fit your coursework around your existing commitments and obligations.",
   },
   {
     id: 3,
-    icon: "/assets/icons/case.svg",
-    title: "Next.js 13 + TypeScript",
+    icon: "/assets/icons/Icon Container (2).svg",
+    title: "Diverse Course Offerings",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Explore a wide range of design and development courses covering various topics.",
   },
   {
     id: 4,
-    icon: "/assets/icons/bolt-shield.svg",
-    title: "Sanity Blog and Docs",
+    icon: "/assets/icons/Icon Container (2).svg",
+    title: "Practical Projects and Assignments",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Develop a portfolio showcasing your skills and abilities to potential employers.",
   },
   {
     id: 5,
-    icon: "/assets/icons/bag.svg",
-    title: "DB, Auth and Stripe",
+    icon: "/assets/icons/Icon Container (2).svg",
+    title: "Interactive Learning Environment",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.",
   },
   {
     id: 6,
-    icon: "/assets/icons/crown.svg",
-    title: "Regular Free Updates",
+    icon: "/assets/icons/Icon Container (2).svg",
+    title: "Updated Curriculum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Access courses with up-to-date content reflecting the latest trends and industry practices.",
   },
 ];
 

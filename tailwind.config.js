@@ -22,10 +22,12 @@ module.exports = {
       },
       colors: {
         primary_700: "#087861",
+        green_700: "#086250",
         green_600: "#0E977B",
         green_500: "#18B696",
         green_400: "#13D3AD",
         lightGray: "#F2F4F7",
+        green_rgba: 'rgba(10, 106, 86, 0.03)',
       },
       keyframes: {
         "animate-fade-in": {

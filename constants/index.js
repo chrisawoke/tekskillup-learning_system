@@ -213,3 +213,105 @@ export const toBeginItems = [
     detail2: "Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to courses. There’s even more opportunity for courses chosen for Udemy Business.",
   },
 ];
+
+export const mockLineData = [
+  {
+      id: "japan",
+      data: [
+          {
+              x: "January",
+              y: 101,
+          },
+          {
+              x: "Febraury",
+              y: 75,
+          },
+          {
+              x: "March",
+              y: 36,
+          },
+          {
+              x: "April",
+              y: 216,
+          },
+          {
+              x: "May",
+              y: 35,
+          },
+          {
+              x: "June",
+              y: 236,
+          },
+          {
+              x: "July",
+              y: 88,
+          },
+          {
+              x: "August",
+              y: 232,
+          },
+          {
+              x: "September",
+              y: 281,
+          },
+          {
+              x: "october",
+              y: 1,
+          },
+          {
+              x: "November",
+              y: 35,
+          },
+          {
+              x: "December",
+              y: 14,
+          },
+      ],
+  },
+];
+
+export const brandsLogo = [
+  { id: 1, src: '/assets/brandlogos/card (6).svg', alt:"zaiper logo" },
+  { id: 2, src: '/assets/brandlogos/card (5).svg', alt:"spotify logo" },
+  { id: 3, src: '/assets/brandlogos/card (4).svg', alt:"zoom logo" },
+  { id: 4, src: '/assets/brandlogos/card (3).svg', alt:"amazon logo" },
+  { id: 5, src: '/assets/brandlogos/card (2).svg', alt:"adobe logo" },
+  { id: 6, src: '/assets/brandlogos/card (1).svg', alt:"notion logo" },
+  { id: 7, src: '/assets/brandlogos/card.svg', alt:"netflix logo" },
+]
+
+export const mockData = [
+  {id: 1, src: '/assets/icons/Icon.svg', title: 'Online Degree', content: 'Contrary to popular belief, Lorem sof hs gig hhhhh'},
+  {id: 2, src: '/assets/icons/Icon (1).svg', title: 'Short Course', content: 'Contrary to popular belief, Lorem sof hs gig hhhhh'},
+  {id: 3, src: '/assets/icons/Icon (2).svg', title: 'Learn with Expert', content: 'Contrary to popular belief, Lorem sof hs gig hhhhh'},
+]
+
+export const testimonies = [
+  {id: 1, src: '/assets/image/Frame 427320641.png', comments: '"Thank you so much for your help. Its exactly what I\'ve been looking for. You won\'t regret it. It really saves me time and effort. Tekskillup is exactly what our business has been lacking."', name: 'Samson James', position: 'Lorem sempe tr'},
+  {id: 2, src: '/assets/image/Frame 427320641.png', comments: '"Thank you so much for your help. It\'s exactly what I\'ve been looking for. You won\'t regret it. It really saves me time and effort. Tekskillup is exactly what our business has been lacking."', name: 'Samson James', position: 'Lorem sempe tr'},
+  {id: 3, src: '/assets/image/Frame 427320641.png', comments: '"Thank you so much for your help. It\'s exactly what I\'ve been looking for. You won\'t regret it. It really saves me time and effort. Tekskillup is exactly what our business has been lacking."', name: 'Samson James', position: 'Lorem sempe tr'},
+]
+
+
+export const footerLinks = [
+	{
+		id: 1,
+		title: 'Home',
+		links: [
+			{ id: 1, link: 'Benefits', href: '#' },
+			{ id: 2, link: 'Our Courses', href: '#' },
+			{ id: 3, link: 'Our Testimonials', href: '#' },
+			{ id: 4, link: 'Our FAQ', href: '#' },
+		],
+	},
+	{
+		id: 2,
+		title: 'About Us',
+		links: [
+			{ id: 1, link: 'Newsletter', href: '#' },
+			{ id: 2, link: 'Company', href: '#' },
+			{ id: 3, link: 'Achievement', href: '#' },
+			{ id: 4, link: 'Our Goals', href: '#' },
+		],
+	},
+];
