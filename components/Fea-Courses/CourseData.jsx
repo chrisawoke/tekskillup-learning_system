@@ -73,6 +73,39 @@ const AllCourses = [
         review: 4.8,
         NumStudents: 413,
         tag: "Pro Market"
+    },
+    {
+        id: 7,
+        image: image4,
+        plays: "20",
+        heading: "Web Design basic to advance",
+        sellingPrice: "$560",
+        costPrice: "$560",
+        review: 4.8,
+        NumStudents: 413,
+        tag: "Verification"
+    },
+    {
+        id: 8,
+        image: image5,
+        plays: "20",
+        heading: "Web Design basic to advance",
+        sellingPrice: "$560",
+        costPrice: "$560",
+        review: 4.8,
+        NumStudents: 413,
+        tag: "Features"
+    },
+    {
+        id: 9,
+        image: image6,
+        plays: "20",
+        heading: "Web Design basic to advance",
+        sellingPrice: "$560",
+        costPrice: "$560",
+        review: 4.8,
+        NumStudents: 413,
+        tag: "Pro Market"
     }
 ]
 

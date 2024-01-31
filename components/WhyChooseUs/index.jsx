@@ -41,7 +41,7 @@ const Feature = () => {
             Why Choose Us?
           </h2>
           <div className="flex-center pb-6 md:pb-10">
-              <p class="md:max-w-4xl text-center px-16 md:px-0 text-black text-opacity-80 text-sm md:text-xl font-normal leading-snug">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
+              <p class="md:max-w-4xl text-center md:px-0 text-black text-opacity-80 md:text-xl font-normal leading-snug">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
           </div>
 
             <div className="my-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:my-15 lg:grid-cols-3 xl:my-20 pb-8 md:pb-16 px">
