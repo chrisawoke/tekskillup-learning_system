@@ -14,7 +14,7 @@ const Courses = () => {
     
     useEffect(() => {
      setData(AllCourses);
-     setCourse[...new Set(AllCourses.map((item) => item.tag))]
+     setCourse([...new Set(AllCourses.map((item) => item.tag))]);
      setCourse(courseName);
    },[])
 
