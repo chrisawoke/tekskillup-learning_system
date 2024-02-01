@@ -2,21 +2,9 @@
 const menuData = [
   {
     id: 1,
-    title: "Home",
-    path: "/",
-    newTab: false,
-  },
-  {
-    id: 2,
     title: "Courses",
     newTab: false,
     submenu: [
-      {
-        id: 41,
-        title: "Courses",
-        path: "/about",
-        newTab: false,
-      },
       {
         id: 42,
         title: "Courses",
@@ -38,10 +26,16 @@ const menuData = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "About us",
     newTab: false,
     path: '/about'
+  },
+  {
+    id: 3,
+    title: "Resources",
+    path: "/resources",
+    newTab: false,
   },
   {
     id: 4,
