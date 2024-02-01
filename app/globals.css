@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* font awesome */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @tailwind base;
 @tailwind components;
@@ -57,11 +56,12 @@
 }
 
 .custom-btn2 {
-  @apply text-white sm:px-8 py-[8px] px-10 sm:text-base text-[12px] bg-green_700 rounded-lg transition duration-150 ease-in-out cursor-pointer hover:bg-green_500 hover:border-green_500
+  @apply text-white sm:px-8 py-[8px] px-10 sm:text-base text-[12px] bg-green_700 rounded-lg transition duration-150 ease-in-out cursor-pointer hover:bg-green_500 hover:border-green_500;
 }
 
 .custom-btn3 {
   @apply text-white sm:px-8 py-[8px] px-4 text-[12px] bg-green_700 rounded-md transition duration-150 ease-in-out cursor-pointer hover:bg-green_500 hover:border-green_500 text-center
+
 }
 
 .hero__title {
@@ -139,6 +139,10 @@
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.09);
 }
 
+.box-shadow {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
   /* about hero section */
   .about-hero-img {
     background-position: center;
@@ -146,12 +150,20 @@
     background-size: cover;
   }
 
-  /* Faq section */
-  .ReactCollapse--collapse {
-    transition: height 500ms;
-  }
 
-  /* RATINGS */
+/* about hero section */
+.about-hero-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Faq section */
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+/* RATINGS */
 .ratings {
   /* margin-left: 2rem; */
 }
@@ -163,7 +175,7 @@
 }
 
 .rating-outer::before {
-  content: '\f006 \f006 \f006 \f006 \f006';
+  content: "\f006 \f006 \f006 \f006 \f006";
 }
 
 .rating-inner {
@@ -176,9 +188,40 @@
 }
 
 .rating-inner::before {
-  content: '\f005 \f005 \f005 \f005 \f005';
+  content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
 }
+
+.swiper-wrapper {
+  height: 400px;
+}
+
+/* Styles for the course creation form */
+
+.form-course-create section {
+  @apply flex flex-col gap-8 items-center justify-center;
+}
+
+.form-course-create section .form-label-input {
+  @apply flex flex-col gap-1 items-start justify-center w-full;
+}
+
+.form-course-create section div label {
+  @apply text-gray-500 text-sm font-semibold;
+}
+
+.form-course-create section .form-label-input input,
+.form-course-create section .form-label-input textarea {
+  @apply p-3 border rounded-md focus:outline-0 focus:border-[2px] focus:border-gray-400 w-full transition-all;
+}
+
+.form-course-create section div .quill .ql-toolbar {
+  @apply block;
+}
+
+/* This will hide the default checkbox */
+.form-course-create input[type="checkbox"] {
+  @apply accent-primary_700 h-4 w-4;
 
 
 .swiper-wrapper{
