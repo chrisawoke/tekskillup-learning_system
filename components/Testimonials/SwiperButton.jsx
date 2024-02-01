@@ -2,8 +2,10 @@
 
 import { useSwiper } from 'swiper/react';
 import { BsArrowLeft, BsArrowRight } from  'react-icons/bs'
+import { useState } from 'react';
 
 export const SwiperNavButtons = () => {
+  const [hover, setHover] = useState(0)
   const swiper = useSwiper();
 
   return (

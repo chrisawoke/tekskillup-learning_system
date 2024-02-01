@@ -11,9 +11,11 @@ const Courses = () => {
     const [course, setCourse] = useState([]);
     const [activeCourse, setActiveCourse] = useState('All');
 
-   useEffect(() => {
+    
+    useEffect(() => {
      setData(AllCourses);
-     setCourse([... new Set(AllCourses.map((item) => item.tag))])
+     setCourse[...new Set(AllCourses.map((item) => item.tag))]
+     setCourse(courseName);
    },[])
 
    const course_filter = (itemData) => {

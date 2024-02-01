@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Hero = () => {
@@ -18,7 +19,7 @@ const Hero = () => {
                   <br />
                   Affordable 
                 </p>
-                <div className="mt-12 mb-16 lg:mt-10 lg:mb-32">
+                <div className="mt-12 mb-16 lg:mt-10">
                   <p className="text-sm md:text-lg text-center lg:text-left my-3 font-semibold">
                     Grow with Online Design and Development Courses. 
                   </p>
@@ -27,10 +28,10 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className="flex justify-center lg:justify-start">
-                  <button className="custom-btn2 flex justify-center md:justify-start items-center text-center">
+                  <Link href="/signup" className="custom-btn2 flex justify-center md:justify-start items-center text-center">
                       Get Started 
                       <MdOutlineArrowOutward className="text-white ml-1" />
-                  </button>
+                  </Link>
                 </div>
             </div>
             <Image
