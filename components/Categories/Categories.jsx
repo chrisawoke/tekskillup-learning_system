@@ -6,7 +6,7 @@ const Categories = () => {
     <section className='mx-auto max-width'>
         <div className="px-8 md:px-24 my-16 md:my-24">
             <h1 className='text-[#262626] text-4xl md:text-[3rem] xs:text-[2.1rem] font-extrabold leading-[88.588px] text-center'>Top Categories</h1>
-            <h2 className='text-[#59595A] text-[1.25rem] font-[400] leading-[39.865px] font-inter text-center'>24,000+ unique online courses list design</h2>
+            <h2 className='text-[#59595A] text-[1.25rem] font-[400] leading-[39.865px] text-center'>24,000+ unique online courses list design</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-[90px] place-items-center'>
                 <div style={{border: `1.518px solid rgba(8, 2, 2, 0.20)`}} className='bg-[#fff] rounded-[10.629px] py-[74.8663px] px-[36.925px] w-full md:w-[260px]'>
                     <div className="flex-center">

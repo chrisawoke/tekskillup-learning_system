@@ -13,22 +13,22 @@ const Footer = () => {
         <footer className='mx-auto max-width bg-green_rgba md:bg-white'>
             {/* horizontal line */}
             <div className='px-8 md:px-24 lg:flex justify-between mt-[3rem] md:mt-[5rem] pt-[78px] pb-[50px]' style={{ borderTop: `1px solid rgba(0, 0, 0, 0.15)`, borderBottom: `1px solid rgba(0, 0, 0, 0.15)` }}>
-            <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-28 sm:items-center md:items-start">
-                <div className="flex flex-col sm:flex-row gap-16 md:gap-28">
+            <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-32 sm:items-center md:items-start">
+                <div className="flex flex-col md:flex-row gap-16 md:gap-28">
                     <div className='md:pt-3'>
                         <Image src='/assets/image/Logo.png' width='150' height='150' loading='lazy' alt='logo' />
                         <h2 className='text-sm sm:text-[1rem] leading-[24px] font-[400] mt-5 flex items-center gap-2'><IoMdMail /> hello@Tekskillup.com</h2>
                         <h2 className='text-sm sm:text-[1rem] leading-[24px] font-[400] mt-5 flex items-center gap-2'><FaPhoneAlt /> +91 91813 23 2309</h2>
                         <h2 className='text-sm sm:text-[1rem] leading-[24px] font-[400] mt-5 flex items-center gap-2'><IoLocationSharp /> Somewhere in the World</h2>
                     </div>
-                    <div className='flex gap-16 md:gap-32'>
+                    <div className='flex gap-16 md:gap-24'>
                         {footerLinks.map((item) => (
                             <div key={item.id}>
                                 <h3 className='md:pt-5 mb-8 text-lg font-semibold text-black'>
                                     {item.title}
                                 </h3>
                                 {item.links.map(({ id, href, link }) => (
-                                    <div className='pb-5' key={id}>
+                                    <div className='pb-5 w-[150px]' key={id}>
                                         <Link
                                             href={href}
                                             className='text-sm sm:text-[1rem] text-[#59595A] hover:text-green_600'

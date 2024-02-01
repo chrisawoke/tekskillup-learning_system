@@ -61,7 +61,7 @@
 }
 
 .custom-btn3 {
-  @apply text-white sm:px-8 py-[8px] px-4 text-[12px] bg-green_700 rounded-md transition duration-150 ease-in-out cursor-pointer hover:bg-green_500 hover:border-green_500
+  @apply text-white sm:px-8 py-[8px] px-4 text-[12px] bg-green_700 rounded-md transition duration-150 ease-in-out cursor-pointer hover:bg-green_500 hover:border-green_500 text-center
 }
 
 .hero__title {
@@ -138,10 +138,7 @@
 .box-shadow2 {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.09);
 }
-  .box-shadow {
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
-  }
-  
+
   /* about hero section */
   .about-hero-img {
     background-position: center;
@@ -185,5 +182,18 @@
 
 
 .swiper-wrapper{
-  height: 400px;
+  height: 500px;
+}
+
+.testimonial .swiper-button-prev, 
+.testimonial .swiper-button-next {
+  position: static;
+  height: auto;
+  width: auto;
+  margin-top: 16px;
+}
+
+.testimonial .swiper-button-next::after,
+.testimonial .swiper-button-prev::after {
+  display: none;
 }
