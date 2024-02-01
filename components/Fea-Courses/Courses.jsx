@@ -14,7 +14,7 @@ const Courses = () => {
    useEffect(() => {
      setData(AllCourses);
      setCourse([... new Set(AllCourses.map((item) => item.tag))])
-   },[AllCourses])
+   },[])
 
    const course_filter = (itemData) => {
       const filterData = AllCourses.filter((item) => item.tag == itemData);
@@ -48,9 +48,8 @@ const Courses = () => {
             {
               course.map((item) => {
                 return (
-                  <li>
+                  <li key={item.id}>
                       <button 
-                        key={item.id}
                         className={`lg:w-[159px] xs:w-[90px] lg:p-[8px] xs:py-[8px] xs:px-[5px] text-center lg:text-[16px] xs:text-[12px] font-[600] leading-[24px] font-inter ${
                           activeCourse === item ? 'bg-[#0A6A56] rounded-[10px] text-[#fff]' : 'text-[#000] rounded-[10px] bg-white border-[1px] border-solid border-[#4D4D4D4D]'
                         }`}
