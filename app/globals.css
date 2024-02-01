@@ -182,18 +182,5 @@
 
 
 .swiper-wrapper{
-  height: 500px;
-}
-
-.testimonial .swiper-button-prev, 
-.testimonial .swiper-button-next {
-  position: static;
-  height: auto;
-  width: auto;
-  margin-top: 16px;
-}
-
-.testimonial .swiper-button-next::after,
-.testimonial .swiper-button-prev::after {
-  display: none;
+  height: 400px;
 }
