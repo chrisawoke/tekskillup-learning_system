@@ -2,17 +2,16 @@ import StarRating from './starRating';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Card = ({course}) => {
+export const CourseCard = ({ course }) => {
     return (
         <Link key={course.courseId} href={`/course/${course.courseId}`} className='cursor-pointer w-full'>
             <div className="">
-                <div className="shadow-card-100 p-4 rounded-lg md:m-4 xs:mb-6">
+                <div className="transition-transform duration-300 ease-in-out transform hover:scale-103 hover:-translate-y-2 hover:shadow-lg shadow-card-100 p-4 rounded-lg md:m-4 xs:mb-6">
                     <Image
                         src={course.image}
                         alt={course.title}
-                        width={300}
-                        height={180}
-                        layout="responsive"
+                        width={640}
+                        height={200}
                         className="rounded-md"
                     />
                     <div className="flex items-center my-3">
@@ -59,9 +58,7 @@ const Card = ({course}) => {
                             </div>
 
                             <button className="custom-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                                </svg>
+                                &#10230;
                             </button>
                         </div>
                     </div>
@@ -72,4 +69,18 @@ const Card = ({course}) => {
     )
 }
 
-export default Card
+
+// ------------------ TODO: FIX POPULAR CATEGORIES TO HAVE MULTIPLE ROWS ----------------
+// export const CategoryCard = ({ category }) => {
+//     <div key={Math.random()*100000000000} className="flex rounded-lg p-3 my-2 shadow-card-100  cursor-pointer h-[400px]" >
+//         <div className='mr-4 p-4 bg-[#04AA15] bg-opacity-15 rounded-full border-4 border-[#04AA15] w-[64px] h-[64px]'>
+//             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#04AA15" className="w-6 h-6">
+//                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+//             </svg>
+//         </div>
+//         <div className=''>
+//             <p className="text-lg  font-bold">{category.name}</p>
+//             <p className="text-base  text-gray-400">{category.count} Courses</p>
+//         </div>
+//     </div>
+// }

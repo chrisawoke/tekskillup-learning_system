@@ -1,54 +1,69 @@
 'use client'
 
-import React, { useState } from 'react';
-import { courses } from '../lib/data';
-import CardWrapper from './CardWrapper';
+import React, { useRef } from "react";
+import Slider from "react-slick";
 
-export default function TopCourses() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { courses } from '../lib/data';
+import { CourseCardWrapper } from './wrapper';
+import Link from 'next/link';
+
+function TopCourses() {
+
     const cardsPerBatch = 6;
     const maxIndex = Math.ceil(courses.length / cardsPerBatch) - 1;
     const maxIndexArray = Array.from({ length: maxIndex }, (_, index) => index);
 
-    const nextBatch = () => {
-        setCurrentIndex((prevIndex) => (prevIndex < maxIndex - 1 ? prevIndex + 1 : prevIndex));
+    let sliderRef = useRef(null);
+    const next = () => {
+        sliderRef.slickNext();
     };
-
-    const prevBatch = () => {
-        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
+    const previous = () => {
+        sliderRef.slickPrev();
     };
-
-    const slideStyle = {
-        transform: `translateX(-${currentIndex * (100)}%)`,
-        transition: 'transform 0.5s ease-in-out',
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1
     };
-
     return (
-        <section className="bg-white padding-x mx-auto mb-8">
+        <section className="padding-x padding-y bg-white mx-auto mb-8 max-width">
             <h2 className="w-full text-3xl lg:text-4xl font-bold text-center mb-3">Top Courses</h2>
             <p className="text-gray-600 text-center text-base md:text-lg leading-5 md:width-[80%] md:mx-auto mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce
             </p>
 
-            <div className="overflow-hidden relative">
-                <div className="flex w-[300%]">
+            <div className="w-full px-0">
+                <Slider
+                    ref={slider => {
+                        sliderRef = slider;
+                    }}
+                    {...settings}
+                >
                     {maxIndexArray.map((course, index) => (
-                        <div key={index} className='flex transition-all duration-500' style={slideStyle}>
-                            <CardWrapper key={index} currCourses={courses.slice(index * cardsPerBatch, (index + 1) * cardsPerBatch)} />
+                        <div key={index} className='flex transition-all duration-500'>
+                            <CourseCardWrapper key={index} currCourses={courses.slice(index * cardsPerBatch, (index + 1) * cardsPerBatch)} />
                         </div>
                     ))}
+                </Slider>
+                <div className='hidden md:flex justify-center mt-6 mb-4 font-semibold text-base'>
+                    <button onClick={previous} className="custom-btn mr-6">PREVIOUS</button>
+                    <button onClick={next} className="custom-btn">NEXT</button>
+                </div>
+                <div className='flex md:hidden justify-center mb-4'>
+                    <Link href='/courses'><button className="custom-btn mr-6">See More</button></Link>
                 </div>
             </div>
 
+        </section >
 
-            <div className='hidden md:flex justify-center pb-4'>
-                <button onClick={prevBatch} className="custom-btn mr-6"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg></button>
-                <button onClick={nextBatch} className="custom-btn"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg></button>
-            </div>
 
-            <div className='flex md:hidden justify-center mb-4'>
-                <button className="custom-btn mr-6">See More</button>
-            </div>
-        </section>
+
     );
 }
+
+export default TopCourses;

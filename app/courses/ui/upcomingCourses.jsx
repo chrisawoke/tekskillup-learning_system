@@ -6,21 +6,28 @@ const UpcomingCourses = () => {
 
 
     return (
-        <div className="padding-x padding-y mb-8">
+        <section className="padding-x padding-y my-8 max-width">
             <div className="">
-                <h2 className="text-3xl lg:text-4xl font-bold text-center mb-2">Upcoming Courses</h2>
-                <p className="text-gray-600 text-center text-base md:text-lg max-w-5xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
+                <h2 className="text-3xl lg:text-4xl font-bold text-center mb-3">Upcoming Courses</h2>
+                <p className="text-gray-600 text-center text-base md:text-lg max-w-5xl mx-auto mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce</p>
 
                 {/* Courses List */}
                 <div className="my-3">
                     {courses.map((course) => (
                         <div key={course.id}>
                             <div className="hidden md:flex justify-between items-center rounded-lg p-4 shadow-card-100 my-8">
-                                <Image src={course.imageUrl} alt={course.title} width={320} height={180} className="rounded-md mr-4 " />
+                                <Image
+                                    src={course.imageUrl}
+                                    alt={course.title}
+                                    width={320}
+                                    height={180}
+                                    className="rounded-md mr-4 transition-transform duration-700 ease-in-out transform hover:scale-105 cursor-pointer"
+                                />
+
                                 <div className="flex flex-col mt-4 md:mt-0 md:ml-4 flex-grow w-[33%] items-start justify-center mr-2">
                                     <h3 className="text-lg font-semibold lg:text-xl">{course.title}</h3>
                                     <div className='flex mr-4 items-center mt-4'>
-                                        <Image src={course.instructorAvatarUrl} alt={course.instructor} width={48} height={48} className="rounded-full mr-2" />
+                                        <Image src={course.instructorAvatarUrl} alt={course.instructor} width={48} height={48} className="rounded-full mr-2 " />
                                         <p className="text-base font-bold lg:text-lg">{course.instructor}</p>
                                     </div>
                                 </div>
@@ -38,13 +45,13 @@ const UpcomingCourses = () => {
                                     <span className="font-bold items-start text-lg lg:text-xl text-[#0A6A56]">${course.price}</span>
                                 </div>
                             </div>
-                            <div key={course.id} className="md:hidden flex flex-col items-center rounded-lg p-4 shadow-lg my-4 w-full">
-                                <div className="relative w-full h-60 rounded-full">
+
+                            <div key={course.id} className="md:hidden flex flex-col items-center rounded-lg p-4 shadow-lg my-8 w-full">
+                                <div className="relative w-full h-40 rounded-full aspect-video">
                                     <Image
                                         src={course.imageUrl}
                                         alt={course.title}
                                         layout='fill'
-                                        objectFit='cover'
                                         className="rounded-t-lg rounded-b-lg"
                                     />
                                 </div>
@@ -53,8 +60,8 @@ const UpcomingCourses = () => {
                                         <Image
                                             src={course.instructorAvatarUrl}
                                             alt={course.instructor}
-                                            layout='fill'
-                                            objectFit='cover'
+                                            width={64}
+                                            height={64}
                                             className="rounded-full"
                                         />
                                     </div>
@@ -92,7 +99,7 @@ const UpcomingCourses = () => {
                     ))}
                 </div> */}
             </div>
-        </div>
+        </section>
     );
 };
 

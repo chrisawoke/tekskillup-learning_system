@@ -190,6 +190,22 @@ export const categories = [
     { name: 'UX/UI Design', count: 5, id: 6 },
     { name: 'Web Development', count: 5, id: 7 },
     { name: 'Python', count: 5, id: 8 },
+    { name: 'HTML & CSS', count: 5, id: 9 },
+    { name: 'UX/UI Design', count: 5, id: 10 },
+    { name: 'Web Development', count: 5, id: 11 },
+    { name: 'Python', count: 5, id: 12 },
+    { name: 'HTML & CSS', count: 5, id: 13 },
+    { name: 'UX/UI Design', count: 5, id: 14 },
+    { name: 'Web Development', count: 5, id: 15 },
+    { name: 'Python', count: 5, id: 16 },
+    { name: 'HTML & CSS', count: 5, id: 17 },
+    { name: 'UX/UI Design', count: 5, id: 18 },
+    { name: 'Web Development', count: 5, id: 19 },
+    { name: 'Python', count: 5, id: 20 },
+    { name: 'HTML & CSS', count: 5, id: 21 },
+    { name: 'UX/UI Design', count: 5, id: 22 },
+    { name: 'Web Development', count: 5, id: 23 },
+    { name: 'Python', count: 5, id: 24 },
 ]
 
 export const upcomingCourses = [

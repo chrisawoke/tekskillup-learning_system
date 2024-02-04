@@ -5,20 +5,21 @@ import Link from 'next/link'
 
 const PopularInstructors = () => {
     return (
-        <section className="padding-x padding-y mb-8">
+        <section className="padding-x padding-y mb-8 max-width">
             <h2 className="w-full text-3xl lg:text-4xl font-bold text-center mb-3">Popular Instructors</h2>
             <p className="text-gray-600 text-center text-base md:text-lg md:width-[80%] md:mx-auto mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel dui dignissim laoreet. Fusce
             </p>
             <div className="flex flex-col items-center md:flex-row justify-center">
                 {topInstructors.map((instructor, index) => (
-                    <div key={index} className="flex flex-col items-center w-full md:w-[33%] mr-3">
-                        <div className='mr-3 p-2' >
+                    <div key={index} className="flex flex-col items-center w-full md:w-[33%] gap-x-3">
+                        <div className='p-2' >
                             <Image
                                 src={instructor.imageUrl}
                                 alt={instructor.name}
-                                width={400}
-                                height={400}
+                                width={360}
+                                height={360}
+                                className='transition-transform duration-700 ease-in-out transform hover:scale-105 cursor-pointer'
                             />
                         </div>
                         <div className='flex mb-6  justify-center'>

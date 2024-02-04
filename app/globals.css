@@ -123,3 +123,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* react slick horizontal slider */
+.slick-slide > div {
+  margin: 0 8px;
+}
