@@ -129,18 +129,18 @@ function Header() {
 					className='absolute  top-9 left-0 w-full'
 				/>
 
-				<div className=' p-[4rem] grid grid-cols-2 items-center justify-center'>
+				<div className=' p-6 md:p-[4rem] grid md:grid-cols-2 grid-cols-1 items-center justify-center'>
 					<div className='flex flex-col mt-16'>
 						{' '}
-						<h2 className='md:text-[2.7rem] leading-[3rem] font-[600] text-white tracking-wide'>
+						<h2 className='text-[2rem] font-[700] md:text-[2.7rem] leading-[3rem] md:font-[600] text-white tracking-wide'>
 							Learn UIUX: From Basics To Advance in 10 hours
 						</h2>
-						<p className=' opacity-[0.8] text-[1rem] mt-7 w-[80%]'>
+						<p className=' opacity-[0.8] text-[1rem] mt-7 md:w-[80%]'>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
 							id facere ipsam perferendis ducimus quis eaque ad nisi et,
 							officia.
 						</p>
-						<div className='flex gap-x-5 mt-8 mb-10 text-[0.8rem] '>
+						<div className='flex gap-x-5 mt-8 mb-10 text-[0.65rem] md:text-[0.8rem] '>
 							<p className='opacity-[0.8rem] flex gap-2 items-center'>
 								<span className='flex text-[#FBA333]'>
 									<IoStarSharp />
@@ -171,8 +171,8 @@ function Header() {
 							</p>
 						</div>
 					</div>
-					<div className='flex  items-start justify-end mt-[6.6rem] relative top-[2rem]'>
-						<p className='opacity-[0.8] text-[0.89rem] relative left-12'>
+					<div className='flex  items-start justify-between md:justify-end md:mt-[6.6rem] mt-10 relative md:top-[2rem]'>
+						<p className='opacity-[0.8] text-[0.89rem] relative md:left-12'>
 							Add to Watchlist
 						</p>
 
@@ -198,13 +198,13 @@ function Header() {
 								height={20}
 								className='hover:scale-110 ease-in-out duration-500 cursor-pointer'
 							/>
-							<div className='bg-white h-[8rem] w-[0.05rem]'></div>
+							<div className='bg-white h-16 md:h-[8rem] w-[0.05rem]'></div>
 							<Image
 								src='/assets/image/dotPattern.png'
 								alt='background Image'
 								width={150}
 								height={150}
-								className='relative -left-[8rem] bottom-[3.8rem]'
+								className='relative -left-[8rem] bottom-[5rem] md:bottom-[3.8rem] hidden md:block'
 							/>
 						</span>
 					</div>
