@@ -5,6 +5,8 @@ import InputIcon from "../login/Input";
 import { FaUser } from 'react-icons/fa';
 import { FaGoogle } from 'react-icons/fa';
 import PasswordInput from "./PasswordInput";
+import InputCheckbox from "./Checkbox";
+
 
 const Form = () => {
 
@@ -76,21 +78,21 @@ const Form = () => {
     };
 
   return (
-    <main className="padding-x padding-y text-gray-500 w-[100%] mt-5 md:mt-0">
+    <main className="px-[10rem] padding-y text-gray-500 w-[100%] mt-5 md:mt-0">
       <div>
         <h1 className="text-4xl font-bold md:text-6xl">
           Sign Up<span className="text-primary_700">!</span>
         </h1>
-        <p className="mt-5">
+      <p className="mt-7 text-xl">
           Explore, learn, and grow with us. enjoy a seamless and
           <br /> enriching educational journey. lets begin!
         </p>
       </div>
-      <form className="mt-7"  onSubmit={handleSubmit}>
-        <div className="flex-column mt-5">
-          <label className="font-semibold">First name</label>
+      <form className="mt-10"  onSubmit={handleSubmit}>
+        <div className="flex-column mt-8">
+          <label className="font-semibold text-xl">First name</label>
           <InputIcon
-            icon={<FaUser className="h-4 w-5 text-gray-500" />}
+            icon={<FaUser className="h-5 w-6 text-gray-500" />}
             type="text"
             placeholder="Enter your first name"
             value={firstName}
@@ -98,10 +100,10 @@ const Form = () => {
             error={errors.firstName}
           />
         </div>
-        <div className="flex-column mt-5">
-          <label className="font-semibold">Last name</label>
+        <div className="flex-column mt-8">
+          <label className="font-semibold text-xl">Last name</label>
           <InputIcon
-            icon={<FaUser className="h-4 w-5 text-gray-500" />}
+            icon={<FaUser className="h-5 w-6 text-gray-500" />}
             type="text"
             placeholder="Enter your last name"
             value={lastName}
@@ -109,10 +111,10 @@ const Form = () => {
             error={errors.lastName}
           />
         </div>
-        <div className="flex-column mt-5">
-          <label className="font-semibold"> Your Email</label>
+        <div className="flex-column mt-8">
+          <label className="font-semibold text-xl"> Your Email</label>
           <InputIcon
-            icon={<FaUser className="h-4 w-5 text-gray-500" />}
+            icon={<FaUser className="h-5 w-6 text-gray-500" />}
             type="email"
             placeholder="Enter your email"
             value={email}
@@ -120,24 +122,23 @@ const Form = () => {
             error={errors.email}
           />
         </div>
-        <div className="flex-column mt-5">
-          <label className="font-semibold">Password</label>
+        <div className="flex-column mt-8">
+          <label className="font-semibold text-xl">Password</label>
           <PasswordInput
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           error={errors.password}
         />
         </div>
-        <div className="mt-5 flex flex-row">
-            <input type="checkbox" className="w-10 h-5 bg-gray-300 mt-0.5"/>
-            <label className="">Apply to become an instructor</label>
+        <div>
+          <InputCheckbox/>
         </div>
-        <div className="mt-10">
-          <button className="bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">Sign Up</button>
+        <div className="mt-10 text-2xl">
+          <button className="bg-primary_700 text-white sm:px-8 py-3 px-10 w-[100%] sm:text-base text-2xl border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">Sign Up</button>
         </div>
         <div className="mt-7 text-center">
           <p className="text-lg">
-            Already have an account? &nbsp; <a href="" className="text-blue-500 hover:text-[1.1em]">Log In</a> 
+            Already have an account? &nbsp; <a href="/login" className="text-blue-500 hover:text-blue-700">Log In</a> 
           </p>
         </div>
       </form>
@@ -148,7 +149,7 @@ const Form = () => {
       <hr className="w-[25%] border-gray-500"/>
       </div>
       <div className=" flex items-center justify-center mt-5 mb-5">
-          <button className="flex flex-row gap-3 justify-center items-center bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] md:w-[50%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+          <button className="flex flex-row gap-3 justify-center items-center bg-primary_700 text-white sm:px-8 py-3 px-10 w-[100%] md:w-[50%] sm:text-base text-2xl border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
            <FaGoogle className="h-5 w-5 " /> Continue with Google
           </button>
         </div>

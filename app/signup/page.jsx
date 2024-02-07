@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Signup = () => {
   return(
-    <div className="md:max-width md:flex flex-row md:w-[100%] md:padding-y md:padding-x mt-10 md:gap-5">
-    <div className="px-8 md:pt-20 md:w-[45%] md:mt-[10%]">
+    <div className="md:max-width md:flex flex-row md:w-[100%] md:padding-y md:px-20 mt-10 md:gap-5">
+    <div className="px-8 md:pt-20 md:w-[40%] md:mt-[10%] md:fixed">
        <Image
          src="/assets/image/pana.svg"
          alt="hero-image"
@@ -14,7 +14,7 @@ const Signup = () => {
          className="w-full object-cover"
        />
      </div>
-     <div className="md:w-[55%]">
+     <div className="md:w-[100%] md:pl-[40%]">
         <Form/>
      </div>
  </div>

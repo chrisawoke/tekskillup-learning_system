@@ -58,21 +58,21 @@ const Form = () => {
     
 
   return (
-    <main className="padding-x padding-y text-gray-500 w-[100%] mt-5 md:mt-0">
+    <main className="padding-y px-[10rem] text-gray-500 w-[100%] mt-5 md:mt-0">
       <div>
         <h1 className="text-4xl font-bold md:text-6xl">
           Log In<span className="text-primary_700">!</span>
         </h1>
-        <p className="mt-5">
+        <p className="mt-7 text-xl font-400">
           Explore, learn, and grow with us. enjoy a seamless and
           <br /> enriching educational journey. lets begin!
         </p>
       </div>
-      <form className="mt-7" onSubmit={handleSubmit}>
+      <form className="mt-10" onSubmit={handleSubmit}>
         <div className="flex-column ">
-          <label className="font-semibold"> Your Email</label>
+          <label className="font-semibold text-xl"> Your Email</label>
           <InputIcon
-            icon={<FaUser className="h-4 w-5 text-gray-500" />}
+            icon={<FaUser className="h-5 w-6 text-gray-500" />}
             type="email"
             placeholder="Enter your email"
             value={email}
@@ -80,8 +80,8 @@ const Form = () => {
             error={errors.email}
           />
         </div>
-        <div className="mt-5">
-          <label className="font-semibold">Password</label>
+        <div className="mt-10">
+          <label className="font-semibold text-xl">Password</label>
           <PasswordInput
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -89,31 +89,31 @@ const Form = () => {
         />
         </div>
         <div className="mt-10">
-          <button className="bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+          <button className="bg-primary_700 text-white sm:px-8 py-3 px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
             Log In
           </button>
         </div>
-        <div className="text-end text-[1em] text-blue-500 mt-2 hover:text-[1.1em]">
+        <div className="text-end text-[1em] text-blue-500 mt-2 hover:text-blue-700">
           <a href="">forgot password?</a>
         </div>
       </form>
       <div className="mt-10">
-        <p className="text-[1.1em] text-center">Login as -</p>
-        <div className="flex flex-col gap-2 items-center justify-center mt-5 px-10 md:flex-row">
-          <button className="bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+        <p className="text-[1.4em] text-center">Login as -</p>
+        <div className="flex flex-col gap-2 items-center justify-center mt-8 px-10 md:flex-row">
+          <button className="bg-primary_700 text-white sm:px-8 py-[10px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
             Student
           </button>
-          <button className="bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+          <button className="bg-primary_700 text-white sm:px-8 py-[10px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
             Admin
           </button>
-          <button className="bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+          <button className="bg-primary_700 text-white sm:px-8 py-[10px] px-10 w-[100%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
             Instructor
           </button>
         </div>
-        <div className="mt-7 text-center">
+        <div className="mt-10 text-center">
           <p className="text-lg">
             Don&apos;t have an account? &nbsp;{" "}
-            <a href="" className="text-blue-500 hover:text-[1.1em]">
+            <a href="/signup" className="text-blue-500 hover:text-blue-700">
               Sign Up
             </a>{" "}
           </p>
@@ -127,7 +127,12 @@ const Form = () => {
           <hr className="w-[25%] border-gray-500" />
         </div>
       <div className=" flex items-center justify-center mt-5 mb-5">
-          <button className="flex flex-row gap-3 justify-center items-center bg-primary_700 text-white sm:px-8 py-[8px] px-10 w-[100%] md:w-[50%] sm:text-base text-[12px] border border-primary_700 hover:text-primary_700 hover:bg-white rounded-[7px] transition duration-150 ease-in-out cursor-pointer">
+          <button className="flex flex-row gap-3 justify-center items-center
+           bg-primary_700 text-white sm:px-8 py-[10px] px-10
+            w-[100%] md:w-[50%] sm:text-base text-[12px] border
+             border-primary_700 hover:text-primary_700
+              hover:bg-white rounded-[7px] transition duration-150
+               ease-in-out cursor-pointer">
            <FaGoogle className="h-5 w-5 " /> Continue with Google
           </button>
         </div>
