@@ -15,7 +15,7 @@ const Reasons = () => {
           >
             <Image
               src={reason.imgUrl}
-              alt=""
+              alt={reason.imgAlt}
               width={150}
               height={150}
               className="md:w-[4rem] w-[3rem]"
