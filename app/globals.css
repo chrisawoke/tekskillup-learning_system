@@ -179,6 +179,11 @@
 	color: #f8ce0b;
 }
 
-.swiper-wrapper {
-	height: 400px;
+.swiper-wrapper{
+  height: 400px;
+}
+
+/* account page password area */
+.password:focus-within {
+  @apply border border-[#2e512e] 
 }
