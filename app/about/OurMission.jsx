@@ -23,7 +23,7 @@ const OurMission = () => {
           >
             <Image
               src={goal.imgUrl}
-              alt=""
+              alt={goal.imgAlt}
               width={50}
               height={50}
               className=" md:w-[3rem] w-[2.5rem]"
@@ -39,7 +39,7 @@ const OurMission = () => {
       </div>
       <Image
         src="/assets/image/bubble.svg"
-        alt=""
+        alt="colorful bubble layout"
         width={400}
         height={400}
         className="absolute left-0 md:bottom-20 bottom-8 md:w-[35%] w-[50%]"

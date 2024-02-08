@@ -5,7 +5,7 @@ const AboutUs = () => {
     <section className=" relative lg:mt-[6.88rem] mt-[4rem] padding-x ">
       <Image
         src="/assets/image/bubble.svg"
-        alt=""
+        alt="colorful bubble layout"
         width={400}
         height={400}
         className="absolute right-0 lg:-top-[11rem] bottom-0 z-[1] md:w-[35%] w-[50%]"

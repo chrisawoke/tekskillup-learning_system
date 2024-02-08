@@ -16,7 +16,7 @@ const Achievements = () => {
             <div
               key={index}
               className=" h-fit lg:p-[2.5rem] px-[1rem] py-[1.5rem] w-[48.5%] md:mb-[2rem] mb-[1rem] rounded-[0.875rem] hover:scale-105 transition-all bg-white">
-              <Image src={achievement.imgUrl} alt="" width={70} height={70} className="md:w-[2.8rem] w-[2.3rem]"/>
+              <Image src={achievement.imgUrl} alt={achievement.imgAlt} width={70} height={70} className="md:w-[2.8rem] w-[2.3rem]"/>
               <h3 className=" md:h-fit h-[2.8rem] lg:text-xl sm:text-[1.1rem] text-base lg:my-4 my-[.65rem]">{achievement.title}</h3>
               <p className=" md:h-fit h-[9.5rem] lg:text-base md:text-[.78rem] sm:text-[0.9rem] text-[0.8rem] text-[#59595A]">{achievement.detail}</p>
             </div>
