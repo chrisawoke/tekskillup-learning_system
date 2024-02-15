@@ -30,6 +30,7 @@ function TopCourses() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+    
     return (
         <section className="padding-x padding-y bg-white mx-auto mb-8 max-width">
             <h2 className="w-full text-3xl lg:text-4xl font-bold text-center mb-3">Top Courses</h2>

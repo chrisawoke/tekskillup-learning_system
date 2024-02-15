@@ -12,7 +12,7 @@ export default function StarRating({ rating }) {
   
     // Define the SVG for a star with a dynamic gradient ID
     const StarSVG = ({ gradientId }) => (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-4 h-4">
         <defs>
           <linearGradient id={gradientId}>
             <stop offset={gradientId === emptyStarGradientId ? "0%" : "100%"} stopColor="gold"/>
